@@ -1,16 +1,17 @@
 # ShallowApps
 
-Marketing site for ShallowApps — live at [shallowapps.com](https://shallowapps.com).
+Small, thoughtful apps for Apple devices — from a solo developer in Singapore.
 
-Static HTML/CSS/JS, hosted on GitHub Pages. No build step.
-
-## Pages
-- `index.html` — landing page
-- `shallowtv.html` — ShallowTV (full site at [shallowtv.com](https://shallowtv.com))
-- `streamline.html` — Streamline ([shallowapps.com/streamline](https://shallowapps.com/streamline))
+🌐 **[shallowapps.com](https://shallowapps.com)** &nbsp;·&nbsp; ✉️ contact@shallowapps.com
 
 ## Apps
-- **ShallowTV** — IPTV/M3U player for Apple platforms
-- **Streamline** — IPTV/M3U playlist editor for Mac and iPhone
 
-Contact: contact@shallowapps.com
+### 📺 [ShallowTV](https://shallowtv.com)
+A modern, native IPTV and M3U playlist player for every Apple device — macOS, iOS, iPadOS, tvOS, and visionOS.
+
+### 🎛 [Streamline](https://shallowapps.com/streamline)
+An IPTV/M3U playlist editor for Mac and iPhone. Bulk edit, organize, and clean up playlists with ease.
+
+---
+
+This repository contains the source for the marketing site at [shallowapps.com](https://shallowapps.com) — static HTML/CSS/JS, hosted on GitHub Pages.
