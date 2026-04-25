@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary -->
+  <title>ShallowApps — Small, thoughtful apps for Apple devices</title>
+  <meta name="description" content="An indie app studio crafting small, thoughtful native apps for iPhone, iPad, Mac, Apple TV, and Vision Pro. No bloat, no noise — just tools that get out of your way." />
+  <meta name="keywords" content="ShallowApps, indie iOS apps, Mac apps, native Apple apps, ShallowTV, Streamline, IPTV player, M3U editor, indie app studio" />
+  <meta name="author" content="ShallowApps" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#fdf6f3" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#14101a" media="(prefers-color-scheme: dark)" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="canonical" href="https://shallowapps.com/" />
+
+  <!-- Favicon / app icons -->
+  <link rel="icon" type="image/png" href="assets/Icon-iOS-Default-1024x1024@1x.png" />
+  <link rel="apple-touch-icon" href="assets/Icon-iOS-Default-1024x1024@1x.png" />
+  <link rel="shortcut icon" href="assets/Icon-iOS-Default-1024x1024@1x.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ShallowApps" />
+  <meta property="og:title" content="ShallowApps — Small, thoughtful apps for Apple devices" />
+  <meta property="og:description" content="An indie app studio crafting small, thoughtful native apps for iPhone, iPad, Mac, Apple TV, and Vision Pro. Made with care." />
+  <meta property="og:url" content="https://shallowapps.com/" />
+  <meta property="og:image" content="https://shallowapps.com/assets/Icon-iOS-Default-1024x1024@1x.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:alt" content="ShallowApps logo" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ShallowApps" />
+  <meta name="twitter:creator" content="@ShallowApps" />
+  <meta name="twitter:title" content="ShallowApps — Small, thoughtful apps for Apple devices" />
+  <meta name="twitter:description" content="An indie app studio crafting small, thoughtful native apps for iPhone, iPad, Mac, Apple TV, and Vision Pro." />
+  <meta name="twitter:image" content="https://shallowapps.com/assets/Icon-iOS-Default-1024x1024@1x.png" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ShallowApps",
+    "url": "https://shallowapps.com",
+    "logo": "https://shallowapps.com/assets/Icon-iOS-Default-1024x1024@1x.png",
+    "description": "An indie app studio crafting small, thoughtful native apps for Apple devices.",
+    "email": "contact@shallowapps.com",
+    "sameAs": [
+      "https://www.instagram.com/shallowapps/",
+      "https://www.threads.com/@shallowapps",
+      "https://x.com/ShallowApps",
+      "https://www.youtube.com/@shallowapps",
+      "https://github.com/ShallowApps"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ShallowApps",
+    "url": "https://shallowapps.com",
+    "publisher": { "@type": "Organization", "name": "ShallowApps" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,600&family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f3e6dd;
+      --surface: rgba(255, 250, 245, 0.6);
+      --surface-solid: #fffaf5;
+      --border: rgba(170, 110, 140, 0.22);
+      --text: #2b1d2c;
+      --text-soft: #5a4a5c;
+      --muted: #8a7a8c;
+      --accent: #d77ea4;       /* rose */
+      --accent-2: #b39ddb;     /* lavender */
+      --accent-3: #ffc1a6;     /* peach */
+      --accent-4: #a8d8c9;     /* mint */
+      --gradient: linear-gradient(135deg, #ffb8d1 0%, #c8a8e9 50%, #a3c9f1 100%);
+      --gradient-warm: linear-gradient(135deg, #ffc1a6 0%, #ffb8d1 100%);
+      --serif: 'Fraunces', 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.65;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Animated background orbs */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(90px);
+      opacity: 0.32;
+      pointer-events: none;
+      z-index: 0;
+      animation: float 22s ease-in-out infinite;
+    }
+    .orb-1 { width: 520px; height: 520px; background: #e892b3; top: -180px; left: -160px; }
+    .orb-2 { width: 460px; height: 460px; background: #a988d6; top: 28%; right: -180px; animation-delay: -7s; }
+    .orb-3 { width: 380px; height: 380px; background: #f0a385; bottom: 8%; left: 8%; animation-delay: -14s; }
+    .orb-4 { width: 340px; height: 340px; background: #80c4b1; top: 60%; right: 18%; animation-delay: -4s; opacity: 0.22; }
+
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(40px, -30px) scale(1.08); }
+      66% { transform: translate(-30px, 40px) scale(0.95); }
+    }
+
+    /* Subtle grain texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+      opacity: 0.06;
+      pointer-events: none;
+      z-index: 1;
+      mix-blend-mode: multiply;
+    }
+
+    main, nav, footer { position: relative; z-index: 2; }
+
+    /* NAV */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      background: rgba(243, 230, 221, 0.78);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border-bottom: 1px solid rgba(170, 110, 140, 0.18);
+      z-index: 100;
+    }
+
+    .nav-logo {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      color: var(--text);
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    .nav-logo span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    .nav-contact {
+      color: var(--text-soft);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .nav-contact:hover { color: var(--text); background: rgba(215, 126, 164, 0.1); }
+
+    /* Products dropdown */
+    .nav-products { position: relative; }
+
+    .nav-products-trigger {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      background: none;
+      border: none;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 0.35rem 0.7rem 0.35rem 0.4rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: color 0.2s, background 0.2s;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-trigger-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 7px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(180, 100, 140, 0.25);
+    }
+
+    .nav-trigger-name {
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+
+    .nav-trigger-name span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    .nav-products-trigger:hover,
+    .nav-products-trigger.open { background: rgba(215, 126, 164, 0.1); }
+
+    .nav-chevron { transition: transform 0.2s; opacity: 0.6; }
+    .nav-products-trigger.open .nav-chevron { transform: rotate(180deg); }
+
+    .nav-dropdown {
+      position: absolute;
+      top: calc(100% + 12px);
+      left: 0;
+      transform-origin: top left;
+      transform: translateY(-8px) scale(0.97);
+      min-width: 280px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(28px) saturate(180%);
+      -webkit-backdrop-filter: blur(28px) saturate(180%);
+      border: 1px solid rgba(214, 168, 188, 0.3);
+      border-radius: 20px;
+      padding: 0.55rem;
+      box-shadow: 0 20px 60px rgba(180, 100, 140, 0.18), 0 0 0 1px rgba(255,255,255,0.5) inset;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.18s ease, transform 0.18s ease;
+      z-index: 200;
+    }
+
+    .nav-dropdown.open {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: all;
+    }
+
+    .nav-dropdown-children {
+      position: relative;
+      margin: 0.1rem 0 0 1.6rem;
+      padding-left: 1.1rem;
+    }
+
+    .nav-dropdown-children .nav-dropdown-item { position: relative; }
+
+    /* Vertical line: from top of container down to this item's center */
+    .nav-dropdown-children .nav-dropdown-item::before {
+      content: '';
+      position: absolute;
+      left: -1.1rem;
+      width: 1rem;
+      bottom: 50%;
+      border-left: 1.5px solid rgba(215, 126, 164, 0.4);
+      border-bottom: 1.5px solid rgba(215, 126, 164, 0.4);
+      border-bottom-left-radius: 6px;
+    }
+    .nav-dropdown-children .nav-dropdown-item + .nav-dropdown-item { margin-top: 0.35rem; }
+    .nav-dropdown-children .nav-dropdown-item:nth-child(1)::before { top: -0.5rem; }
+    .nav-dropdown-children .nav-dropdown-item:nth-child(2)::before { top: calc(-100% - 0.85rem); }
+    .nav-dropdown-children .nav-dropdown-item:nth-child(3)::before { top: calc(-200% - 1.2rem); }
+
+    .nav-dropdown-item {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 0.7rem 0.85rem;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--text);
+      transition: background 0.15s;
+    }
+
+    .nav-dropdown-item:hover { background: rgba(215, 126, 164, 0.1); }
+    .nav-dropdown-item.active { background: rgba(215, 126, 164, 0.16); }
+
+    .nav-dropdown-item img {
+      width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 14px rgba(180, 100, 140, 0.25);
+    }
+
+    .nav-dropdown-item-text strong {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .nav-dropdown-item-text span {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.1rem;
+    }
+
+    .nav-dropdown-sep { height: 1px; background: rgba(214, 168, 188, 0.2); margin: 0.4rem 0.85rem; }
+
+    /* HERO — compact */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4.5rem 2rem 3rem;
+      max-width: 760px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--text-soft);
+      border: 1px solid rgba(214, 168, 188, 0.35);
+      border-radius: 999px;
+      padding: 0.4rem 1rem 0.4rem 0.4rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      margin-bottom: 1.75rem;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(180, 100, 140, 0.08);
+    }
+
+    .badge-dot {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--gradient-warm);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 400;
+      letter-spacing: -1.5px;
+      line-height: 1.05;
+      margin-bottom: 1.25rem;
+      color: var(--text);
+    }
+
+    h1 em {
+      font-style: italic;
+      font-weight: 400;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-soft);
+      max-width: 520px;
+      margin-bottom: 2.75rem;
+      line-height: 1.7;
+    }
+
+    .btn-group { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+      cursor: pointer;
+      border: none;
+      letter-spacing: -0.01em;
+    }
+
+    .btn-primary {
+      background: var(--gradient);
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(215, 126, 164, 0.4), inset 0 1px 0 rgba(255,255,255,0.3);
+    }
+
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(215, 126, 164, 0.5), inset 0 1px 0 rgba(255,255,255,0.3); }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--text);
+      border: 1px solid rgba(214, 168, 188, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .btn-ghost:hover { transform: translateY(-2px); background: rgba(255, 255, 255, 0.95); }
+
+    /* SECTIONS */
+    .section {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+      font-weight: 400;
+      letter-spacing: -1px;
+      margin-bottom: 3rem;
+      line-height: 1.15;
+      color: var(--text);
+    }
+
+    .section-title em {
+      font-style: italic;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    /* PRODUCT BLOCKS (Flexibits-style) */
+    .products { max-width: 1180px; margin: 0 auto; padding: 1rem 2rem 3rem; }
+
+    .product-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    .product-block + .product-block { border-top: 1px solid rgba(170, 110, 140, 0.18); }
+
+    .product-block.reverse .product-media { order: 2; }
+
+    .product-media {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 360px;
+    }
+
+    .product-media::before {
+      content: '';
+      position: absolute;
+      inset: 12% 16%;
+      background: var(--block-glow, var(--gradient));
+      filter: blur(70px);
+      opacity: 0.45;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .product-icon-large {
+      position: relative;
+      z-index: 1;
+      width: 200px;
+      height: 200px;
+      border-radius: 46px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.18), 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .product-screenshot {
+      position: relative;
+      z-index: 1;
+      max-width: 100%;
+      max-height: 480px;
+      border-radius: 18px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.22), 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    /* Step-based screenshot carousel with dots */
+    .carousel-wrap {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 560px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      height: 100%;
+      transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+      will-change: transform;
+    }
+
+    .carousel-slide {
+      flex: 0 0 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .carousel-slide img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+      border-radius: 18px;
+    }
+
+    .carousel-dots {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .carousel-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      background: rgba(120, 100, 120, 0.32);
+      transition: background 0.25s, transform 0.25s, width 0.3s;
+    }
+
+    .carousel-dot:hover { background: rgba(120, 100, 120, 0.55); }
+
+    .carousel-dot.active {
+      background: var(--block-accent, var(--accent));
+      width: 24px;
+      border-radius: 5px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .carousel-track { transition: none; }
+    }
+
+    .product-heading {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .product-icon-inline {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+      flex-shrink: 0;
+    }
+
+    /* Per-product typography — match each app's own brand */
+    .product-name.font-shallowtv {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+    }
+    .product-name.font-shallowtv em { font-style: normal; font-weight: 800; }
+
+    .product-name.font-streamline {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-weight: 400;
+      letter-spacing: -1px;
+    }
+    .product-name.font-streamline em { font-style: italic; font-weight: 400; }
+
+    .product-name {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 400;
+      letter-spacing: -1.2px;
+      line-height: 1.05;
+      color: var(--text);
+      margin: 0;
+    }
+
+    .product-name em {
+      font-style: italic;
+      background: var(--block-gradient, var(--gradient));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .product-tagline {
+      font-size: 1.1rem;
+      color: var(--text-soft);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      max-width: 460px;
+    }
+
+    .product-bullets { list-style: none; padding: 0; margin: 0 0 2rem; }
+    .product-bullets li {
+      font-size: 0.95rem;
+      color: var(--text-soft);
+      padding: 0.4rem 0 0.4rem 1.6rem;
+      position: relative;
+      line-height: 1.5;
+    }
+    .product-bullets li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.85rem;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--block-accent, var(--accent));
+      opacity: 0.7;
+    }
+
+    .product-ctas { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+
+    .product-ctas .btn-primary {
+      background: var(--block-gradient, var(--gradient));
+      box-shadow: 0 8px 24px var(--block-shadow, rgba(215, 126, 164, 0.4)), inset 0 1px 0 rgba(255,255,255,0.3);
+    }
+
+    @media (max-width: 800px) {
+      .product-block,
+      .product-block.reverse {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 3.5rem 0;
+        text-align: center;
+      }
+      .product-block.reverse .product-media { order: 0; }
+      .product-media { min-height: 240px; }
+      .product-icon-large { width: 140px; height: 140px; border-radius: 32px; }
+      .product-tagline { margin-left: auto; margin-right: auto; }
+      .product-bullets { display: inline-block; text-align: left; }
+      .product-ctas { justify-content: center; }
+      .product-heading { justify-content: center; }
+    }
+
+    /* APPS GRID (legacy, kept in case still referenced) */
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .app-card {
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid rgba(214, 168, 188, 0.3);
+      border-radius: 24px;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
+      text-decoration: none;
+      color: inherit;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 4px 20px rgba(180, 100, 140, 0.06);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .app-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+    }
+
+    .app-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px rgba(180, 100, 140, 0.18);
+      border-color: rgba(215, 126, 164, 0.5);
+    }
+
+    .app-card img {
+      width: 56px;
+      height: 56px;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(180, 100, 140, 0.2);
+    }
+
+    .app-card h3 {
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: -0.4px;
+      color: var(--text);
+    }
+
+    .app-card p { font-size: 0.92rem; color: var(--text-soft); line-height: 1.6; }
+
+    .app-tag {
+      display: inline-block;
+      background: rgba(215, 126, 164, 0.12);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 0.25rem 0.7rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+
+    /* VALUES */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .value-card {
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px solid rgba(214, 168, 188, 0.3);
+      border-radius: 22px;
+      padding: 1.75rem;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 4px 20px rgba(180, 100, 140, 0.05);
+    }
+
+    .value-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(180, 100, 140, 0.12); }
+
+    .value-icon {
+      font-size: 1.6rem;
+      margin-bottom: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--gradient-warm);
+      box-shadow: 0 4px 14px rgba(255, 184, 209, 0.4);
+    }
+
+    .value-card:nth-child(2) .value-icon { background: linear-gradient(135deg, #c8a8e9 0%, #b39ddb 100%); box-shadow: 0 4px 14px rgba(179, 157, 219, 0.4); }
+    .value-card:nth-child(3) .value-icon { background: linear-gradient(135deg, #a8d8c9 0%, #88c8b6 100%); box-shadow: 0 4px 14px rgba(168, 216, 201, 0.4); }
+    .value-card:nth-child(4) .value-icon { background: linear-gradient(135deg, #ffd4a3 0%, #ffb8d1 100%); box-shadow: 0 4px 14px rgba(255, 212, 163, 0.4); }
+
+    .value-card h3 {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .value-card p { font-size: 0.88rem; color: var(--text-soft); line-height: 1.6; }
+
+    /* ABOUT */
+    .about-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+
+    .about-card {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(214, 168, 188, 0.3);
+      border-radius: 28px;
+      padding: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      box-shadow: 0 12px 40px rgba(180, 100, 140, 0.1);
+    }
+
+    .about-photo-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .about-photo-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      background: var(--gradient);
+      z-index: -1;
+      filter: blur(2px);
+    }
+
+    .about-photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      display: block;
+    }
+
+    .about-text .section-label { margin-bottom: 0.35rem; }
+
+    .about-text h2 {
+      font-family: var(--serif);
+      font-size: 1.7rem;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.7rem;
+      color: var(--text);
+    }
+
+    .about-text p {
+      font-size: 0.98rem;
+      color: var(--text-soft);
+      line-height: 1.7;
+    }
+
+    .about-flag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.88rem;
+      margin-top: 0.85rem;
+    }
+
+    .about-flag a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid rgba(215, 126, 164, 0.3);
+      transition: border-color 0.2s;
+    }
+
+    .about-flag a:hover { border-color: var(--accent); }
+
+    @media (max-width: 600px) {
+      .about-card { flex-direction: column; text-align: center; gap: 1.75rem; padding: 2rem 1.5rem; }
+      .about-flag { justify-content: center; }
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 3rem 2rem 4rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    footer a { color: var(--accent); text-decoration: none; transition: opacity 0.2s; font-weight: 500; }
+    footer a:hover { opacity: 0.7; }
+
+    .footer-flower {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      margin: 0 0 1.25rem;
+    }
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid rgba(214, 168, 188, 0.3);
+      color: var(--text-soft);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: transform 0.2s, background 0.2s, color 0.2s, box-shadow 0.2s;
+    }
+
+    .social-link:hover {
+      transform: translateY(-2px);
+      background: var(--gradient);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 8px 20px rgba(215, 126, 164, 0.35);
+    }
+
+    .social-link svg { width: 18px; height: 18px; }
+
+    /* DARK MODE — placed last so it overrides light defaults */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14101a;
+        --surface: rgba(40, 30, 50, 0.55);
+        --surface-solid: #1d1726;
+        --border: rgba(215, 126, 164, 0.22);
+        --text: #f5ecf2;
+        --text-soft: #c9b8c8;
+        --muted: #9a8a9c;
+        --accent: #f0a0c4;
+        --accent-2: #c8b0f0;
+        --gradient: linear-gradient(135deg, #ff9ec0 0%, #c8a8e9 50%, #8fb8f0 100%);
+      }
+
+      body { background: #14101a; color: var(--text); }
+
+      .orb { opacity: 0.18; filter: blur(110px); }
+      .orb-1 { background: #8a4a6e; }
+      .orb-2 { background: #6a4a9a; }
+      .orb-3 { background: #9a6a4a; }
+      .orb-4 { background: #4a8a7a; opacity: 0.14; }
+
+      body::before { mix-blend-mode: screen; opacity: 0.04; }
+
+      nav {
+        background: rgba(20, 16, 26, 0.92);
+        border-bottom: 1px solid rgba(215, 126, 164, 0.18);
+      }
+
+      .nav-logo { color: var(--text); }
+      .nav-contact { color: var(--text-soft); }
+      .nav-contact:hover { color: var(--text); background: rgba(240, 160, 196, 0.14); }
+
+      .nav-products-trigger { color: var(--text-soft); }
+      .nav-products-trigger:hover,
+      .nav-products-trigger.open { color: var(--text); background: rgba(240, 160, 196, 0.14); }
+
+      .nav-dropdown {
+        background: rgba(28, 20, 38, 0.96);
+        border: 1px solid rgba(215, 126, 164, 0.28);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.65), inset 0 0 0 1px rgba(255,255,255,0.03);
+      }
+
+      .nav-dropdown-item { color: var(--text); }
+      .nav-dropdown-item:hover { background: rgba(240, 160, 196, 0.12); }
+      .nav-dropdown-item-text strong { color: var(--text); }
+      .nav-dropdown-item-text span { color: var(--muted); }
+      .nav-dropdown-sep { background: rgba(215, 126, 164, 0.18); }
+
+      .badge {
+        background: rgba(40, 28, 52, 0.85);
+        border: 1px solid rgba(215, 126, 164, 0.4);
+        color: #efdde8;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      h1 { color: var(--text); }
+      .hero p { color: var(--text-soft); }
+
+      .btn-ghost {
+        background: rgba(40, 28, 52, 0.85);
+        border: 1px solid rgba(215, 126, 164, 0.35);
+        color: var(--text);
+      }
+      .btn-ghost:hover { background: rgba(56, 40, 70, 0.95); }
+
+      .section-title { color: var(--text); }
+
+      .app-card,
+      .value-card {
+        background: rgba(30, 22, 40, 0.85);
+        border: 1px solid rgba(215, 126, 164, 0.22);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      }
+      .app-card h3,
+      .value-card h3 { color: var(--text); }
+      .app-card p,
+      .value-card p { color: var(--text-soft); }
+
+      .app-card::before { background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent); }
+      .app-card:hover { box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); border-color: rgba(240, 160, 196, 0.5); }
+      .value-card:hover { box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4); }
+
+      .app-tag { background: rgba(240, 160, 196, 0.16); color: var(--accent); }
+
+      .about-card {
+        background: rgba(30, 22, 40, 0.9);
+        border: 1px solid rgba(215, 126, 164, 0.22);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+      }
+      .about-text h2 { color: var(--text); }
+      .about-text p { color: var(--text-soft); }
+      .about-photo { border-color: #2a2030; }
+      .about-flag a { border-bottom-color: rgba(240, 160, 196, 0.4); }
+
+      footer { color: var(--muted); }
+
+      .social-link {
+        background: rgba(40, 28, 52, 0.85);
+        border: 1px solid rgba(215, 126, 164, 0.3);
+        color: var(--text-soft);
+      }
+      .social-link:hover { color: #fff; border-color: transparent; }
+
+      .product-block + .product-block { border-top-color: rgba(215, 126, 164, 0.15); }
+      .product-icon-large,
+      .product-screenshot { box-shadow: 0 30px 80px rgba(0,0,0,0.55), 0 8px 24px rgba(0,0,0,0.35); }
+      .product-media::before { opacity: 0.3; }
+      .carousel-dot { background: rgba(255, 255, 255, 0.18); }
+      .carousel-dot:hover { background: rgba(255, 255, 255, 0.35); }
+    }
+
+    @media (max-width: 480px) {
+      nav { padding: 0 1.25rem; }
+      .hero { padding: 5rem 1.25rem 3.5rem; }
+      .section { padding: 3.5rem 1.25rem; }
+      .about-wrap { padding: 3.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="orb orb-4"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-products">
+      <button class="nav-products-trigger" id="products-trigger" aria-haspopup="menu" aria-expanded="false">
+        <img src="assets/Icon-iOS-Default-1024x1024@1x.png" alt="" class="nav-trigger-icon" />
+        <span class="nav-trigger-name">Shallow<span>Apps</span></span>
+        <svg class="nav-chevron" width="11" height="11" viewBox="0 0 12 12" fill="none">
+          <path d="M2 4.5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="nav-dropdown" id="products-dropdown" role="menu">
+        <a href="index.html" class="nav-dropdown-item active">
+          <img src="assets/Icon-iOS-Default-1024x1024@1x.png" alt="ShallowApps" />
+          <div class="nav-dropdown-item-text">
+            <strong>ShallowApps</strong>
+            <span>The studio</span>
+          </div>
+        </a>
+        <div class="nav-dropdown-children">
+          <a href="shallowtv.html" class="nav-dropdown-item">
+            <img src="images/shallowtv-icon.png" alt="ShallowTV" />
+            <div class="nav-dropdown-item-text">
+              <strong>ShallowTV</strong>
+              <span>Native IPTV player</span>
+            </div>
+          </a>
+          <a href="streamline.html" class="nav-dropdown-item">
+            <img src="images/streamline-icon.png" alt="Streamline" />
+            <div class="nav-dropdown-item-text">
+              <strong>Streamline</strong>
+              <span>M3U playlist editor</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="mailto:contact@shallowapps.com" class="nav-contact">Contact</a>
+  </nav>
+
+  <main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="badge"><span class="badge-dot">✦</span> An independent app studio</div>
+    <h1>Apps that feel<br/><em>quietly delightful</em></h1>
+    <p>Small, thoughtful apps for Apple devices, crafted with care. No bloat, no noise — just tools that get out of your way.</p>
+    <div class="btn-group">
+      <a href="#apps" class="btn btn-primary">Explore the apps →</a>
+      <a href="mailto:contact@shallowapps.com" class="btn btn-ghost">Say hello</a>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <div class="products" id="apps">
+
+    <!-- ShallowTV -->
+    <section class="product-block" style="--block-accent: #b39ddb; --block-gradient: linear-gradient(135deg, #c8a8e9 0%, #a3c9f1 100%); --block-shadow: rgba(179, 157, 219, 0.4); --block-glow: linear-gradient(135deg, #c8a8e9, #a3c9f1);">
+      <div class="product-media">
+        <div class="carousel-wrap">
+          <div class="carousel" data-interval="5500" aria-label="ShallowTV screenshots">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="images/shallowtv/1.jpg" alt="ShallowTV — home" /></div>
+              <div class="carousel-slide"><img src="images/shallowtv/2.jpg" alt="ShallowTV — playback" /></div>
+              <div class="carousel-slide"><img src="images/shallowtv/3.jpg" alt="ShallowTV — library" /></div>
+            </div>
+          </div>
+          <div class="carousel-dots" role="tablist"></div>
+        </div>
+      </div>
+      <div class="product-content">
+        <div class="product-heading">
+          <img src="images/shallowtv-icon.png" alt="" class="product-icon-inline" />
+          <h2 class="product-name font-shallowtv">Shallow<em>TV</em></h2>
+        </div>
+        <p class="product-tagline">A modern, native IPTV and M3U playlist player for every Apple device you own.</p>
+        <ul class="product-bullets">
+          <li>macOS, iOS, iPadOS, tvOS, and visionOS</li>
+          <li>Live TV, video-on-demand, smart search</li>
+          <li>Import M3U playlists by URL or file</li>
+        </ul>
+        <div class="product-ctas">
+          <a href="shallowtv.html" class="btn btn-primary">Learn more →</a>
+          <a href="https://apps.apple.com/us/app/shallowtv/id6757123182" target="_blank" rel="noopener" class="btn btn-ghost">App Store</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Streamline -->
+    <section class="product-block reverse" style="--block-accent: #6BBFED; --block-gradient: linear-gradient(135deg, #6BBFED 0%, #b39ddb 100%); --block-shadow: rgba(107, 191, 237, 0.35); --block-glow: linear-gradient(135deg, #6BBFED, #1A4FD8);">
+      <div class="product-media">
+        <div class="carousel-wrap">
+          <div class="carousel" data-interval="3800" aria-label="Streamline screenshots">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="images/streamline/screenshots/1.png" alt="Streamline — playlists" /></div>
+              <div class="carousel-slide"><img src="images/streamline/screenshots/2.png" alt="Streamline — editor" /></div>
+              <div class="carousel-slide"><img src="images/streamline/screenshots/3.png" alt="Streamline — server" /></div>
+              <div class="carousel-slide"><img src="images/streamline/screenshots/4.png" alt="Streamline — bulk edit" /></div>
+              <div class="carousel-slide"><img src="images/streamline/screenshots/5.png" alt="Streamline — settings" /></div>
+              <div class="carousel-slide"><img src="images/streamline/screenshots/6.png" alt="Streamline — iPhone" /></div>
+            </div>
+          </div>
+          <div class="carousel-dots" role="tablist"></div>
+        </div>
+      </div>
+      <div class="product-content">
+        <div class="product-heading">
+          <img src="images/streamline-icon.png" alt="" class="product-icon-inline" />
+          <h2 class="product-name font-streamline">Stream<em>line</em></h2>
+        </div>
+        <p class="product-tagline">Import, edit, and serve M3U playlists with a native Mac and iPhone app built for power users.</p>
+        <ul class="product-bullets">
+          <li>Smart refresh, conflict resolution, bulk editing</li>
+          <li>Built-in local server, 30 languages</li>
+          <li>One-time purchase — Streamline Pro</li>
+        </ul>
+        <div class="product-ctas">
+          <a href="streamline.html" class="btn btn-primary">Learn more →</a>
+          <a href="https://apps.apple.com/us/app/streamline-iptv-m3u-editor/id6760606054?mt=12" target="_blank" rel="noopener" class="btn btn-ghost">App Store</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ABOUT -->
+  <div class="about-wrap">
+    <div class="about-card">
+      <div class="about-photo-wrap">
+        <img src="assets/Me.jpg" alt="Ying" class="about-photo" />
+      </div>
+      <div class="about-text">
+        <div class="section-label">— about</div>
+        <h2>Hi, I'm Ying ✿</h2>
+        <p>ShallowApps is my little corner of the App Store. I build small, focused apps that solve real problems — no teams, no investors, just me, a MacBook, and too much bubble tea.</p>
+        <div class="about-flag">
+          <a href="mailto:contact@shallowapps.com">contact@shallowapps.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-flower">✿</span>
+    <div class="socials">
+      <a href="https://www.instagram.com/shallowapps/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/>
+        </svg>
+      </a>
+      <a href="https://www.threads.com/@shallowapps" target="_blank" rel="noopener" class="social-link" aria-label="Threads">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.18 2C6.6 2 2.85 5.46 2.85 12c0 6.55 3.75 10 9.33 10 5.45 0 8.7-3.05 8.97-7.6.16-2.7-1.27-4.95-3.92-5.84-.41-2.35-2.27-3.85-5-3.85-2.4 0-4.2 1.05-5.04 2.95l1.74.8c.55-1.25 1.66-1.93 3.3-1.93 1.63 0 2.78.78 3.13 2.13-.74-.07-1.5-.07-2.27-.02-3.05.18-5 1.7-4.86 4.05.13 2.2 2.05 3.62 4.55 3.47 2.62-.16 4.45-1.74 4.96-4.7 1.18.74 1.84 1.96 1.74 3.42-.18 3.13-2.62 4.96-6.66 4.96-4.42 0-7.18-2.7-7.18-7.84S7.66 4 12.18 4c4.4 0 7.18 2.5 7.55 6.85l1.92-.16C21.2 5.32 17.55 2 12.18 2zm.97 11.57c-.18 1.95-1.13 2.86-2.7 2.96-1.45.08-2.55-.6-2.62-1.7-.07-1.13.93-1.84 2.92-1.96.55-.03 1.08-.03 1.58.03.27.04.55.08.82.13z"/>
+        </svg>
+      </a>
+      <a href="https://x.com/ShallowApps" target="_blank" rel="noopener" class="social-link" aria-label="X">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/@shallowapps" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 4 12 4 12 4s-7.5 0-9.4.4A3 3 0 0 0 .5 6.5C.1 8.4.1 12 .1 12s0 3.6.4 5.5a3 3 0 0 0 2.1 2.1C4.5 20 12 20 12 20s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1c.4-1.9.4-5.5.4-5.5s0-3.6-.4-5.5zM9.6 15.6V8.4l6.3 3.6z"/>
+        </svg>
+      </a>
+      <a href="https://github.com/ShallowApps" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.89-.39.98 0 1.97.13 2.89.39 2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/>
+        </svg>
+      </a>
+    </div>
+    <p>© 2026 ShallowApps &nbsp;·&nbsp; Made with care in every pixel</p>
+  </footer>
+
+  <script>
+    (function(){
+      var t=document.getElementById('products-trigger');
+      var d=document.getElementById('products-dropdown');
+      if(!t||!d) return;
+      t.addEventListener('click',function(e){ e.stopPropagation(); var o=d.classList.contains('open'); d.classList.toggle('open',!o); t.classList.toggle('open',!o); });
+      document.addEventListener('click',function(){ d.classList.remove('open'); t.classList.remove('open'); });
+      d.addEventListener('click',function(e){ e.stopPropagation(); });
+    })();
+
+    /* Step-based carousels with dot indicators */
+    (function(){
+      document.querySelectorAll('.carousel').forEach(function(carousel){
+        var track = carousel.querySelector('.carousel-track');
+        var slides = track ? track.querySelectorAll('.carousel-slide') : [];
+        if (!track || slides.length < 2) return;
+
+        var wrap = carousel.parentElement;
+        var dotsContainer = wrap.querySelector('.carousel-dots');
+        var interval = parseInt(carousel.dataset.interval, 10) || 5000;
+        var index = 0;
+        var timer = null;
+        var dots = [];
+
+        // Build dots
+        if (dotsContainer) {
+          for (var i = 0; i < slides.length; i++) {
+            var dot = document.createElement('button');
+            dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+            dot.dataset.index = i;
+            dot.addEventListener('click', (function(idx){
+              return function(){ goTo(idx); restart(); };
+            })(i));
+            dotsContainer.appendChild(dot);
+            dots.push(dot);
+          }
+        }
+
+        function goTo(i){
+          index = (i + slides.length) % slides.length;
+          track.style.transform = 'translateX(' + (-index * 100) + '%)';
+          dots.forEach(function(d, di){ d.classList.toggle('active', di === index); });
+        }
+
+        function next(){ goTo(index + 1); }
+        function start(){ if (!timer) timer = setInterval(next, interval); }
+        function stop(){ if (timer) { clearInterval(timer); timer = null; } }
+        function restart(){ stop(); start(); }
+
+        carousel.addEventListener('mouseenter', stop);
+        carousel.addEventListener('mouseleave', start);
+
+        if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          start();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

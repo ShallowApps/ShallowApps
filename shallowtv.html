@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShallowTV — Modern IPTV Player for Apple Devices</title>
+  <meta name="description" content="A modern, native IPTV and M3U playlist player for macOS, iOS, iPadOS, tvOS, and visionOS." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0d0d;
+      --surface: #161616;
+      --border: #2a2a2a;
+      --text: #f0f0f0;
+      --muted: #888;
+      --accent: #7c6af7;
+      --accent-light: #a99df9;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 58px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(13, 13, 13, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      z-index: 100;
+    }
+
+    .nav-logo {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-logo span { color: var(--accent); }
+
+    .nav-contact {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 0.4rem 0.75rem;
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .nav-contact:hover { color: var(--text); background: rgba(255,255,255,0.06); }
+
+    .nav-products { position: relative; }
+
+    .nav-products-trigger {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      background: none;
+      border: none;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 0.3rem 0.65rem 0.3rem 0.35rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s;
+      letter-spacing: -0.3px;
+    }
+
+    .nav-trigger-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 7px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .nav-trigger-name span { color: var(--accent); }
+
+    .nav-products-trigger:hover,
+    .nav-products-trigger.open { background: rgba(255,255,255,0.08); }
+
+    .nav-chevron { transition: transform 0.2s; opacity: 0.55; }
+    .nav-products-trigger.open .nav-chevron { transform: rotate(180deg); }
+
+    .nav-dropdown {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      transform-origin: top left;
+      transform: translateY(-8px) scale(0.97);
+      min-width: 264px;
+      background: rgba(16, 16, 20, 0.97);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 0.5rem;
+      box-shadow: 0 16px 56px rgba(0,0,0,0.75), inset 0 0 0 0.5px rgba(255,255,255,0.04);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.18s ease, transform 0.18s ease;
+      z-index: 200;
+    }
+
+    .nav-dropdown.open {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: all;
+    }
+
+    .nav-dropdown-children {
+      position: relative;
+      margin: 0.1rem 0 0 1.55rem;
+      padding-left: 1.1rem;
+    }
+    .nav-dropdown-children .nav-dropdown-item { position: relative; }
+    .nav-dropdown-children .nav-dropdown-item::before {
+      content: '';
+      position: absolute;
+      left: -1.1rem;
+      width: 1rem;
+      bottom: 50%;
+      border-left: 1.5px solid rgba(124, 106, 247, 0.45);
+      border-bottom: 1.5px solid rgba(124, 106, 247, 0.45);
+      border-bottom-left-radius: 6px;
+    }
+    .nav-dropdown-children .nav-dropdown-item + .nav-dropdown-item { margin-top: 0.35rem; }
+    .nav-dropdown-children .nav-dropdown-item:nth-child(1)::before { top: -0.5rem; }
+    .nav-dropdown-children .nav-dropdown-item:nth-child(2)::before { top: calc(-100% - 0.85rem); }
+    .nav-dropdown-children .nav-dropdown-item:nth-child(3)::before { top: calc(-200% - 1.2rem); }
+
+    .nav-dropdown-item {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 0.65rem 0.85rem;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #f0f0f0;
+      transition: background 0.15s;
+    }
+
+    .nav-dropdown-item:hover { background: rgba(255,255,255,0.08); }
+    .nav-dropdown-item.active { background: rgba(124,106,247,0.12); }
+
+    .nav-dropdown-item img {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+    }
+
+    .nav-dropdown-item-text strong {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-dropdown-item-text span {
+      display: block;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.42);
+      margin-top: 0.1rem;
+    }
+
+    .nav-dropdown-sep { height: 1px; background: rgba(255,255,255,0.07); margin: 0.4rem 0.85rem; }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 5rem 2rem 4rem;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .app-icon-large {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 32px rgba(124, 106, 247, 0.2);
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 480px;
+      margin-bottom: 2rem;
+    }
+
+    .btn-group { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+
+    .btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-ghost { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
+
+    hr { border: none; border-top: 1px solid var(--border); }
+
+    .section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem;
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 2rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3rem;
+    }
+
+    .feature-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.4rem;
+    }
+
+    .feature-icon { font-size: 1.4rem; margin-bottom: 0.6rem; }
+    .feature-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .feature-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+
+    .platforms-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .platform-pill {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.45rem 1rem;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .cta-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2.5rem;
+      text-align: center;
+    }
+
+    .cta-box h2 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 0.5rem; }
+    .cta-box p { color: var(--muted); margin-bottom: 1.5rem; font-size: 0.95rem; }
+
+    .appstore-badge img { height: 44px; }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--text); }
+
+    @media (max-width: 480px) {
+      nav { padding: 1rem 1.25rem; }
+      .hero { padding: 3.5rem 1.25rem 3rem; }
+      .section { padding: 2.5rem 1.25rem; }
+      .cta-box { padding: 1.75rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-products">
+      <button class="nav-products-trigger" id="products-trigger" aria-haspopup="menu" aria-expanded="false">
+        <img src="images/shallowtv-icon.png" alt="" class="nav-trigger-icon" />
+        <span class="nav-trigger-name">Shallow<span>TV</span></span>
+        <svg class="nav-chevron" width="11" height="11" viewBox="0 0 12 12" fill="none">
+          <path d="M2 4.5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="nav-dropdown" id="products-dropdown" role="menu">
+        <a href="index.html" class="nav-dropdown-item">
+          <img src="assets/Icon-iOS-Default-1024x1024@1x.png" alt="ShallowApps" />
+          <div class="nav-dropdown-item-text">
+            <strong>ShallowApps</strong>
+            <span>The studio</span>
+          </div>
+        </a>
+        <div class="nav-dropdown-children">
+          <a href="shallowtv.html" class="nav-dropdown-item active">
+            <img src="images/shallowtv-icon.png" alt="ShallowTV" />
+            <div class="nav-dropdown-item-text">
+              <strong>ShallowTV</strong>
+              <span>Native IPTV player</span>
+            </div>
+          </a>
+          <a href="streamline.html" class="nav-dropdown-item">
+            <img src="images/streamline-icon.png" alt="Streamline" />
+            <div class="nav-dropdown-item-text">
+              <strong>Streamline</strong>
+              <span>M3U playlist editor</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="mailto:contact@shallowapps.com" class="nav-contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <img src="images/shallowtv-icon.png" alt="ShallowTV" class="app-icon-large" />
+    <h1>Stream Anywhere.<br/>Watch Everything.</h1>
+    <p>A modern, native IPTV and M3U playlist player built for Apple devices. Import your playlists and enjoy live TV and on-demand content across all your devices.</p>
+    <div class="btn-group">
+      <a href="https://shallowtv.com" class="btn btn-primary" target="_blank" rel="noopener">Visit shallowtv.com ↗</a>
+      <a href="https://apps.apple.com/us/app/shallowtv/id6757123182" class="btn btn-ghost" target="_blank" rel="noopener">App Store</a>
+    </div>
+  </section>
+
+  <hr />
+
+  <section class="section">
+    <div class="section-label">Features</div>
+    <div class="section-title">Powerful streaming, done right</div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📂</div>
+        <h3>M3U Playlist Import</h3>
+        <p>Add playlists via URL or local file with smart category mapping and content organization.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📺</div>
+        <h3>Live TV &amp; VOD</h3>
+        <p>Stream live channels in real time. Watch video-on-demand with progress tracking and resume support.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>Smart Search</h3>
+        <p>Find content across all your playlists instantly with intelligent search and recent history.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⭐</div>
+        <h3>Favorites</h3>
+        <p>Mark channels and videos as favorites for quick access. Your top content, always one tap away.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎬</div>
+        <h3>Mini Player</h3>
+        <p>Keep watching while you browse. The persistent mini player lets you control playback anywhere.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Auto-Refresh</h3>
+        <p>Playlists automatically refresh with smart content hash detection. Always up-to-date, effortlessly.</p>
+      </div>
+    </div>
+
+    <div class="section-label">Platforms</div>
+    <div class="section-title">One app, all your Apple devices</div>
+    <div class="platforms-grid">
+      <div class="platform-pill">💻 macOS 26+</div>
+      <div class="platform-pill">📱 iOS 26+</div>
+      <div class="platform-pill">📲 iPadOS 26+</div>
+      <div class="platform-pill">📺 tvOS 26+</div>
+      <div class="platform-pill">🥽 visionOS 26+</div>
+    </div>
+  </section>
+
+  <hr />
+
+  <section class="section">
+    <div class="cta-box">
+      <h2>See the full experience</h2>
+      <p>ShallowTV has its own dedicated site with full details, screenshots, and more.</p>
+      <div class="btn-group" style="justify-content:center; margin-bottom:1.25rem;">
+        <a href="https://shallowtv.com" class="btn btn-primary" target="_blank" rel="noopener">Go to shallowtv.com ↗</a>
+      </div>
+      <a href="https://apps.apple.com/us/app/shallowtv/id6757123182" class="appstore-badge" target="_blank" rel="noopener">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" />
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <a href="index.html">ShallowApps</a> &nbsp;·&nbsp; <a href="mailto:contact@shallowapps.com">contact@shallowapps.com</a></p>
+  </footer>
+
+  <script>
+    (function(){
+      var t=document.getElementById('products-trigger');
+      var d=document.getElementById('products-dropdown');
+      if(!t||!d) return;
+      t.addEventListener('click',function(e){ e.stopPropagation(); var o=d.classList.contains('open'); d.classList.toggle('open',!o); t.classList.toggle('open',!o); });
+      document.addEventListener('click',function(){ d.classList.remove('open'); t.classList.remove('open'); });
+      d.addEventListener('click',function(e){ e.stopPropagation(); });
+    })();
+  </script>
+</body>
+</html>
