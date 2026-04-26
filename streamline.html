@@ -3,19 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Streamline — IPTV &amp; M3U Playlist Editor for Mac and iPhone</title>
-  <link rel="icon" type="image/png" href="images/streamline-icon.png" />
-  <meta name="description" content="Streamline is a native Mac and iPhone app for managing IPTV playlists. Import, edit, and serve M3U and M3U8 files with smart refresh, conflict resolution, bulk editing, and a built-in local server." />
-  <meta name="keywords" content="IPTV, M3U, M3U8, playlist editor, playlist manager, Xtream Codes, IPTV player, M3U editor, EPG, stream manager, macOS IPTV, iPhone IPTV, local IPTV server" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCJ209VWXH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NCJ209VWXH');
+  </script>
+  <title>Streamline — IPTV &amp; M3U Playlist Editor for Mac</title>
+  <meta name="description" content="Streamline is a native Mac app for managing IPTV playlists. Import, edit, and serve M3U and M3U8 files with smart refresh, conflict resolution, bulk editing, and a built-in local server. iPhone coming soon." />
+  <meta name="keywords" content="IPTV, M3U, M3U8, playlist editor, playlist manager, Xtream Codes, IPTV player, M3U editor, EPG, stream manager, macOS IPTV, local IPTV server" />
   <meta name="author" content="ShallowApps" />
   <meta name="robots" content="index, follow" />
+  <meta name="color-scheme" content="light dark" />
   <link rel="canonical" href="https://shallowapps.com/streamline" />
+
+  <!-- Favicon / app icons -->
+  <link rel="icon" type="image/png" href="images/streamline-icon.png" />
+  <link rel="apple-touch-icon" href="images/streamline-icon.png" />
+  <link rel="shortcut icon" href="images/streamline-icon.png" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="ShallowApps" />
-  <meta property="og:title" content="Streamline — IPTV &amp; M3U Playlist Editor for Mac and iPhone" />
-  <meta property="og:description" content="Import, edit, and serve M3U playlists with a native Mac and iPhone app built for power users." />
+  <meta property="og:title" content="Streamline — IPTV &amp; M3U Playlist Editor for Mac" />
+  <meta property="og:description" content="Import, edit, and serve M3U playlists with a native Mac app built for power users. iPhone coming soon." />
   <meta property="og:url" content="https://shallowapps.com/streamline" />
   <meta property="og:image" content="https://shallowapps.com/images/streamline-icon.png" />
   <meta property="og:image:width" content="1024" />
@@ -27,13 +41,37 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@ShallowApps" />
   <meta name="twitter:creator" content="@ShallowApps" />
-  <meta name="twitter:title" content="Streamline — IPTV &amp; M3U Playlist Editor for Mac and iPhone" />
-  <meta name="twitter:description" content="Import, edit, and serve M3U playlists with a native Mac and iPhone app built for power users." />
+  <meta name="twitter:title" content="Streamline — IPTV &amp; M3U Playlist Editor for Mac" />
+  <meta name="twitter:description" content="Import, edit, and serve M3U playlists with a native Mac app built for power users. iPhone coming soon." />
   <meta name="twitter:image" content="https://shallowapps.com/images/streamline-icon.png" />
 
   <!-- Apple smart banner -->
   <meta name="apple-itunes-app" content="app-id=6760606054" />
-  <meta name="theme-color" content="#080C14" />
+  <meta name="theme-color" content="#080C14" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#CFDEF1" media="(prefers-color-scheme: light)" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Streamline",
+    "operatingSystem": "macOS",
+    "applicationCategory": "MultimediaApplication",
+    "description": "A native Mac app for importing, editing, and serving IPTV / M3U playlists. iPhone coming soon.",
+    "url": "https://shallowapps.com/streamline",
+    "image": "https://shallowapps.com/images/streamline-icon.png",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ShallowApps",
+      "url": "https://shallowapps.com/"
+    },
+    "offers": [
+      { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Streamline (Free)" },
+      { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Streamline Pro (one-time in-app purchase)" }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -680,6 +718,8 @@
     /* ── Terms ─────────────────────────────────────────────────────── */
     #terms, #privacy { background: var(--bg-dark-2); padding: 6rem 1.5rem; }
     #privacy { background: var(--bg-dark); border-top: 1px solid var(--border); }
+    #terms a, #privacy a { color: rgba(107,191,237,0.9); text-decoration: none; }
+    #terms a:hover, #privacy a:hover { text-decoration: underline; }
 
     .terms-inner { max-width: 720px; margin: 0 auto; }
     .terms-header { text-align: center; margin-bottom: 3rem; }
@@ -710,9 +750,7 @@
       padding: 1.75rem 2rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
+      justify-content: center;
     }
 
     .footer-logo {
@@ -728,6 +766,7 @@
     .footer-links { display: flex; gap: 1.5rem; list-style: none; }
     .footer-links a { color: rgba(255,255,255,0.3); text-decoration: none; font-size: 0.8rem; transition: color 0.2s; }
     .footer-links a:hover { color: rgba(255,255,255,0.7); }
+    .footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
 
     /* ── Scroll animations ─────────────────────────────────────────── */
     .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
@@ -794,6 +833,117 @@
       .hero-buttons { flex-direction: column; align-items: stretch; }
       .btn-lime, .btn-ghost { justify-content: center; }
     }
+
+    /* ── Light mode (follows system preference) ────────────────────── */
+    @media (prefers-color-scheme: light) {
+      :root { color-scheme: light; }
+
+      body { background: #CFDEF1; color: #0D1120; }
+
+      /* Nav */
+      nav { background: rgba(207,222,241,0.75); border-bottom-color: rgba(13,17,32,0.08); }
+      nav.opaque { background: rgba(207,222,241,0.95); }
+      .nav-logo { color: rgba(13,17,32,0.85); }
+      .nav-logo:hover { color: #0D1120; }
+      .nav-links a { color: rgba(13,17,32,0.6); }
+      .nav-links a:hover { color: #0D1120; background: rgba(0,0,0,0.05); }
+      .nav-products-trigger { color: rgba(13,17,32,0.95); }
+      .nav-products-trigger:hover,
+      .nav-products-trigger.open { background: rgba(0,0,0,0.05); }
+
+      .nav-dropdown {
+        background: rgba(255,255,255,0.98);
+        border-color: rgba(0,0,0,0.08);
+        box-shadow: 0 16px 56px rgba(0,0,0,0.12), inset 0 0 0 0.5px rgba(0,0,0,0.04);
+      }
+      .nav-dropdown-item { color: #0D1120; }
+      .nav-dropdown-item:hover { background: rgba(0,0,0,0.04); }
+      .nav-dropdown-item-text strong { color: #0D1120; }
+      .nav-dropdown-item-text span { color: rgba(13,17,32,0.5); }
+      .nav-dropdown-sep { background: rgba(0,0,0,0.07); }
+
+      /* Hero */
+      #home { background: #CFDEF1; }
+      .hero-glow { background: radial-gradient(ellipse at center, rgba(79,140,210,0.30) 0%, rgba(107,191,237,0.15) 40%, transparent 70%); filter: blur(2px); }
+      .hero-glow-secondary { background: radial-gradient(ellipse at center, rgba(107,191,237,0.20) 0%, transparent 65%); }
+      .hero-headline { color: #0D1120; }
+      .hero-headline em {
+        background: linear-gradient(135deg, #0D1120 30%, #2563B8 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+
+      /* Hero badge */
+      .hero-badge {
+        background: rgba(37,99,184,0.10);
+        border-color: rgba(37,99,184,0.35);
+        color: #1E4F9A;
+      }
+      .hero-badge::before { background: #1E4F9A; }
+      .hero-sub { color: rgba(13,17,32,0.6); }
+      .hero-scroll-indicator { color: rgba(13,17,32,0.35); }
+      .scroll-line { background: linear-gradient(to bottom, rgba(13,17,32,0.3), transparent); }
+
+      /* Buttons */
+      .btn-ghost { color: rgba(13,17,32,0.75); border-color: rgba(0,0,0,0.18); }
+      .btn-ghost:hover { background: rgba(0,0,0,0.05); border-color: rgba(0,0,0,0.32); color: #0D1120; }
+
+      /* Screenshots */
+      #screenshots { background: #DEE9F4; }
+      .section-title.dark { color: #0D1120; }
+      .section-sub.dark { color: rgba(13,17,32,0.6); }
+      .section-label.light { color: rgba(13,17,32,0.5); }
+      .ss-tab { background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.08); color: rgba(13,17,32,0.5); }
+      .ss-tab:hover { background: rgba(0,0,0,0.07); color: rgba(13,17,32,0.8); }
+      .ss-num { background: rgba(0,0,0,0.08); }
+      .ss-caption h3 { color: #0D1120; }
+      .ss-caption p { color: rgba(13,17,32,0.55); }
+
+      /* Pro */
+      #pro { background: #CFDEF1; }
+      .pro-card {
+        background: linear-gradient(145deg, #FFFFFF 0%, #EEF3FB 100%);
+        border-color: rgba(26,79,216,0.12);
+        box-shadow: 0 24px 70px rgba(26,79,216,0.08);
+      }
+      .pro-headline { color: #0D1120; }
+      .pro-sub { color: rgba(13,17,32,0.55); }
+      .pro-table thead th { color: rgba(13,17,32,0.5); }
+      .pro-table tbody tr { border-bottom-color: rgba(0,0,0,0.06); }
+      .pro-table tbody tr:hover { background: rgba(0,0,0,0.02); }
+      .td-feature { color: rgba(13,17,32,0.85); }
+      .td-free-label { color: rgba(13,17,32,0.45); }
+      .td-xmark { color: rgba(13,17,32,0.25); }
+      .pro-price-note { color: rgba(13,17,32,0.4); }
+
+      /* Terms / Privacy */
+      #terms, #privacy { background: #DEE9F4; }
+      #privacy { background: #CFDEF1; border-top-color: rgba(13,17,32,0.06); }
+      #terms a, #privacy a { color: #1E4F9A; }
+      #terms a:hover, #privacy a:hover { color: #143A78; }
+      .terms-section h3 { color: rgba(13,17,32,0.9); }
+      .terms-section p { color: rgba(13,17,32,0.6); }
+      .terms-num { background: rgba(0,0,0,0.06); color: rgba(13,17,32,0.5); }
+      .terms-divider { background: rgba(0,0,0,0.07); }
+
+      /* Footer */
+      footer { background: #CFDEF1; border-top-color: rgba(13,17,32,0.06); }
+      .footer-logo { color: rgba(13,17,32,0.55); }
+      .footer-links a { color: rgba(13,17,32,0.45); }
+      .footer-links a:hover { color: rgba(13,17,32,0.8); }
+      .footer-copy { color: rgba(13,17,32,0.5); }
+
+      /* Language switcher */
+      .lang-btn { background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.1); color: rgba(13,17,32,0.7); }
+      .lang-btn:hover { background: rgba(0,0,0,0.08); color: #0D1120; }
+      .lang-dropdown {
+        background: #FFFFFF;
+        border-color: rgba(0,0,0,0.1);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+      }
+      .lang-dropdown button { color: rgba(13,17,32,0.7); }
+      .lang-dropdown button:hover { background: rgba(0,0,0,0.04); color: #0D1120; }
+    }
   </style>
 </head>
 <body>
@@ -818,7 +968,7 @@
             </div>
           </a>
           <div class="nav-dropdown-children">
-            <a href="shallowtv.html" class="nav-dropdown-item">
+            <a href="https://shallowtv.com" class="nav-dropdown-item">
               <img src="images/shallowtv-icon.png" alt="ShallowTV" />
               <div class="nav-dropdown-item-text">
                 <strong>ShallowTV</strong>
@@ -900,7 +1050,7 @@
         Your playlists,<br><em>perfectly organized.</em>
       </h1>
       <p class="hero-sub fade-up fade-up-delay-2" data-i18n="hero.sub">
-        Import, manage, and serve M3U playlists with a native Mac and iPhone app built for power users.
+        Import, manage, and serve M3U playlists with a native Mac app built for power users. iPhone coming soon.
       </p>
       <div class="hero-buttons fade-up fade-up-delay-3">
         <a href="https://apps.apple.com/us/app/streamline-iptv-m3u-editor/id6760606054?mt=12" class="btn-lime" target="_blank" rel="noopener">
@@ -1214,19 +1364,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <a href="#home" class="footer-logo">
-      <img src="images/streamline-icon.png" alt="Streamline" style="width:24px;height:24px;border-radius:6px;" />
-      Streamline
-    </a>
-    <ul class="footer-links">
-      <li><a href="#screenshots" data-i18n="nav.screenshots">Screenshots</a></li>
-      <li><a href="#pro" data-i18n="nav.pricing">Pricing</a></li>
-      <li><a href="#terms">Terms</a></li>
-      <li><a href="#privacy">Privacy</a></li>
-      <li><a href="mailto:contact@shallowapps.com">Contact</a></li>
-      <li><a href="index.html">ShallowApps</a></li>
-    </ul>
-    <span style="font-size:0.78rem; color:rgba(255,255,255,0.2);">© 2026 ShallowApps</span>
+    <span class="footer-copy">© 2026 ShallowApps</span>
   </footer>
 
   <!-- I18N -->
@@ -1293,28 +1431,54 @@
       const canvas=document.getElementById('particle-canvas');
       const ctx=canvas.getContext('2d');
       let W,H,particles=[],animId;
-      const PC=88,MAX_SPEED=0.28,MIN_R=0.8,MAX_R=2.0,CONN=120,CONN_A=0.18;
+      const PC=160,MAX_SPEED=0.32,MIN_R=0.8,MAX_R=2.0,CONN=130,CONN_A=0.18;
+      const MOUSE_RADIUS=140,MOUSE_FORCE=0.22,MAX_BOOST=3.5;
+      const lightMQ=window.matchMedia('(prefers-color-scheme: light)');
+      function dotRGB(){ return lightMQ.matches ? '79,140,210' : '255,255,255'; }
+      const mouse={x:null,y:null,active:false};
       function resize(){ W=canvas.width=canvas.offsetWidth; H=canvas.height=canvas.offsetHeight; }
-      function rp(){ const a=Math.random()*Math.PI*2,s=(Math.random()*MAX_SPEED*0.7)+0.04; return{x:Math.random()*W,y:Math.random()*H,r:Math.random()*(MAX_R-MIN_R)+MIN_R,alpha:(Math.random()*0.3)+0.08,vx:Math.cos(a)*s,vy:Math.sin(a)*s,drift:(Math.random()-0.5)*0.0008}; }
+      function rp(){ const a=Math.random()*Math.PI*2,s=(Math.random()*MAX_SPEED*0.7)+0.04,x=Math.random()*W,y=Math.random()*H; return{x:x,y:y,hx:x,hy:y,r:Math.random()*(MAX_R-MIN_R)+MIN_R,alpha:(Math.random()*0.3)+0.08,vx:Math.cos(a)*s,vy:Math.sin(a)*s,drift:(Math.random()-0.5)*0.0008}; }
       function init(){ particles=[]; for(let i=0;i<PC;i++) particles.push(rp()); }
       function draw(){
         ctx.clearRect(0,0,W,H);
+        const rgb=dotRGB();
+        const alphaBoost=lightMQ.matches?1.6:1;
         for(let i=0;i<particles.length;i++) for(let j=i+1;j<particles.length;j++){
           const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y,d=Math.sqrt(dx*dx+dy*dy);
-          if(d<CONN){ ctx.beginPath(); ctx.strokeStyle=`rgba(255,255,255,${(1-d/CONN)*CONN_A})`; ctx.lineWidth=0.5; ctx.moveTo(particles[i].x,particles[i].y); ctx.lineTo(particles[j].x,particles[j].y); ctx.stroke(); }
+          if(d<CONN){ ctx.beginPath(); ctx.strokeStyle=`rgba(${rgb},${(1-d/CONN)*CONN_A*alphaBoost})`; ctx.lineWidth=0.5; ctx.moveTo(particles[i].x,particles[i].y); ctx.lineTo(particles[j].x,particles[j].y); ctx.stroke(); }
         }
-        for(const p of particles){ ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2); ctx.fillStyle=`rgba(255,255,255,${p.alpha})`; ctx.fill(); }
+        for(const p of particles){ ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2); ctx.fillStyle=`rgba(${rgb},${Math.min(1,p.alpha*alphaBoost)})`; ctx.fill(); }
       }
       function update(){
         for(const p of particles){
           p.vx+=p.drift; p.vy+=(Math.random()-0.5)*0.004;
-          const s=Math.sqrt(p.vx*p.vx+p.vy*p.vy); if(s>MAX_SPEED){p.vx=(p.vx/s)*MAX_SPEED;p.vy=(p.vy/s)*MAX_SPEED;}
+          if(mouse.active){
+            const dx=mouse.x-p.x,dy=mouse.y-p.y,d=Math.sqrt(dx*dx+dy*dy);
+            if(d<MOUSE_RADIUS && d>0.1){
+              const f=(1-d/MOUSE_RADIUS)*MOUSE_FORCE;
+              p.vx+=(dx/d)*f; p.vy+=(dy/d)*f;
+            }
+          } else {
+            const dx=p.hx-p.x,dy=p.hy-p.y,d=Math.sqrt(dx*dx+dy*dy);
+            if(d>2){ p.vx+=(dx/d)*0.012; p.vy+=(dy/d)*0.012; }
+            if(Math.random()<0.0008){ p.hx=Math.random()*W; p.hy=Math.random()*H; }
+          }
+          const max=mouse.active?MAX_SPEED+MAX_BOOST:MAX_SPEED;
+          const s=Math.sqrt(p.vx*p.vx+p.vy*p.vy); if(s>max){p.vx=(p.vx/s)*max;p.vy=(p.vy/s)*max;}
+          p.vx*=0.97; p.vy*=0.97;
           p.x+=p.vx; p.y+=p.vy;
           if(p.x<-10)p.x=W+10; if(p.x>W+10)p.x=-10; if(p.y<-10)p.y=H+10; if(p.y>H+10)p.y=-10;
         }
       }
       function loop(){ update(); draw(); animId=requestAnimationFrame(loop); }
       window.addEventListener('resize',()=>{ cancelAnimationFrame(animId); resize(); init(); loop(); });
+      window.addEventListener('mousemove',function(e){
+        const r=canvas.getBoundingClientRect();
+        if(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom){
+          mouse.x=e.clientX-r.left; mouse.y=e.clientY-r.top; mouse.active=true;
+        } else { mouse.active=false; }
+      });
+      window.addEventListener('mouseleave',function(){ mouse.active=false; });
       resize(); init(); loop();
     })();
 

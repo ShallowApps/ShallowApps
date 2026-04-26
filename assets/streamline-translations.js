@@ -56,7 +56,7 @@ window.I18N = {
     "terms.s8.title": "القانون الحاكم",
     "terms.s8.text": "تخضع هذه الشروط للقوانين المعمول بها وتُفسَّر وفقًا لها، بصرف النظر عن مبادئ تعارض القوانين. تخضع أي نزاعات تنشأ عن هذه الشروط أو استخدامك للتطبيق للاختصاص القضائي الحصري للمحاكم المختصة.",
     "terms.s9.title": "تواصل معنا",
-    "terms.s9.text": "إذا كانت لديك أي أسئلة حول هذه الشروط، يرجى التواصل معنا على <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "إذا كانت لديك أي أسئلة حول هذه الشروط، يرجى التواصل معنا على <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline بواسطة <strong style=\"color:#6BBFED;\">Shallow TV</strong>. جميع الحقوق محفوظة.",
     "footer.docs": "التوثيق",
     "footer.terms": "الشروط",
@@ -137,7 +137,7 @@ window.I18N = {
     "privacy.changes.title": "التغييرات على هذه السياسة",
     "privacy.changes.text": "قد نُحدّث سياسة الخصوصية هذه من حين لآخر. ستنعكس أي تغييرات على هذه الصفحة مع تاريخ محدّث. يُعدّ استمرار استخدام التطبيق بعد التغييرات موافقةً على السياسة المُعدّلة.",
     "privacy.contact.title": "التواصل",
-    "privacy.contact.text": "إذا كانت لديك أي أسئلة حول سياسة الخصوصية هذه، يُرجى التواصل معنا عبر <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "إذا كانت لديك أي أسئلة حول سياسة الخصوصية هذه، يُرجى التواصل معنا عبر <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. جميع الحقوق محفوظة."
   },
   "de": {
@@ -195,7 +195,7 @@ window.I18N = {
     "terms.s8.title": "Anwendbares Recht",
     "terms.s8.text": "Diese Bedingungen unterliegen dem anwendbaren Recht und werden nach diesem ausgelegt, ohne Rücksicht auf Kollisionsnormen. Alle Streitigkeiten aus diesen Bedingungen oder deiner Nutzung der App unterliegen der ausschließlichen Zuständigkeit der zuständigen Gerichte.",
     "terms.s9.title": "Kontakt",
-    "terms.s9.text": "Bei Fragen zu diesen Bedingungen kontaktiere uns bitte unter <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Bei Fragen zu diesen Bedingungen kontaktiere uns bitte unter <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline von <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Alle Rechte vorbehalten.",
     "footer.docs": "Docs",
     "footer.terms": "Nutzungsbedingungen",
@@ -276,7 +276,7 @@ window.I18N = {
     "privacy.changes.title": "Änderungen dieser Richtlinie",
     "privacy.changes.text": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Datum angezeigt. Die weitere Nutzung der App nach Änderungen gilt als Zustimmung zur überarbeiteten Richtlinie.",
     "privacy.contact.title": "Kontakt",
-    "privacy.contact.text": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte unter <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte unter <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Alle Rechte vorbehalten."
   },
   "el": {
@@ -367,7 +367,7 @@ window.I18N = {
     "terms.s8.title": "Εφαρμοστέο Δίκαιο",
     "terms.s8.text": "Οι παρόντες Όροι διέπονται και ερμηνεύονται σύμφωνα με το εφαρμοστέο δίκαιο, χωρίς να λαμβάνονται υπόψη αρχές σύγκρουσης νόμων. Οποιεσδήποτε διαφορές που προκύπτουν από τους παρόντες Όρους ή τη χρήση της Εφαρμογής υπάγονται στην αποκλειστική δικαιοδοσία των αρμόδιων δικαστηρίων.",
     "terms.s9.title": "Επικοινωνία",
-    "terms.s9.text": "Εάν έχετε οποιεσδήποτε ερωτήσεις σχετικά με τους παρόντες Όρους, επικοινωνήστε μαζί μας στη διεύθυνση <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Εάν έχετε οποιεσδήποτε ερωτήσεις σχετικά με τους παρόντες Όρους, επικοινωνήστε μαζί μας στη διεύθυνση <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline by <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Με επιφύλαξη παντός δικαιώματος.",
     "footer.docs": "Τεκμηρίωση",
     "footer.terms": "Όροι",
@@ -410,7 +410,7 @@ window.I18N = {
     "privacy.changes.title": "Αλλαγές σε Αυτήν την Πολιτική",
     "privacy.changes.text": "Ενδέχεται να ενημερώνουμε αυτήν την πολιτική απορρήτου κατά καιρούς. Τυχόν αλλαγές θα αντικατοπτρίζονται σε αυτήν τη σελίδα με ενημερωμένη ημερομηνία. Η συνεχιζόμενη χρήση της εφαρμογής μετά από αλλαγές συνιστά αποδοχή της αναθεωρημένης πολιτικής.",
     "privacy.contact.title": "Επικοινωνία",
-    "privacy.contact.text": "Εάν έχετε οποιεσδήποτε ερωτήσεις σχετικά με αυτήν την πολιτική απορρήτου, επικοινωνήστε μαζί μας στο <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Εάν έχετε οποιεσδήποτε ερωτήσεις σχετικά με αυτήν την πολιτική απορρήτου, επικοινωνήστε μαζί μας στο <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Με επιφύλαξη παντός δικαιώματος."
   },
   "en-GB": {
@@ -423,7 +423,7 @@ window.I18N = {
     "nav.privacy": "Privacy",
     "hero.badge": "New &nbsp;·&nbsp; Smart refresh with conflict detection →",
     "hero.headline": "Your playlists,<br><em>perfectly organised.</em>",
-    "hero.sub": "Import, manage and serve M3U playlists with a native Mac and iPhone app built for power users.",
+    "hero.sub": "Import, manage and serve M3U playlists with a native Mac app built for power users. iPhone coming soon.",
     "hero.button": "Download Now",
     "hero.scroll": "scroll",
     "features.label": "Features",
@@ -502,7 +502,7 @@ window.I18N = {
     "terms.s8.title": "Governing Law",
     "terms.s8.text": "These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflicts of law principles. Any disputes arising from these Terms or your use of the App shall be subject to the exclusive jurisdiction of the competent courts.",
     "terms.s9.title": "Contact",
-    "terms.s9.text": "If you have any questions about these Terms, please contact us at <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "If you have any questions about these Terms, please contact us at <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline by <strong style=\"color:#6BBFED;\">Shallow TV</strong>. All rights reserved.",
     "footer.docs": "Docs",
     "footer.terms": "Terms",
@@ -543,7 +543,7 @@ window.I18N = {
     "privacy.changes.title": "Changes to This Policy",
     "privacy.changes.text": "We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated date. Continued use of the app after changes constitutes acceptance of the revised policy.",
     "privacy.contact.title": "Contact",
-    "privacy.contact.text": "If you have any questions about this privacy policy, please contact us at <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "If you have any questions about this privacy policy, please contact us at <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. All rights reserved."
   },
   "en": {
@@ -556,7 +556,7 @@ window.I18N = {
     "nav.privacy": "Privacy",
     "hero.badge": "New &nbsp;·&nbsp; Smart refresh with conflict detection →",
     "hero.headline": "Your playlists,<br><em>perfectly organized.</em>",
-    "hero.sub": "Import, manage, and serve M3U playlists with a native Mac and iPhone app built for power users.",
+    "hero.sub": "Import, manage, and serve M3U playlists with a native Mac app built for power users. iPhone coming soon.",
     "hero.button": "Download Now",
     "hero.scroll": "scroll",
     "features.label": "Features",
@@ -635,7 +635,7 @@ window.I18N = {
     "terms.s8.title": "Governing Law",
     "terms.s8.text": "These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflicts of law principles. Any disputes arising from these Terms or your use of the App shall be subject to the exclusive jurisdiction of the competent courts.",
     "terms.s9.title": "Contact",
-    "terms.s9.text": "If you have any questions about these Terms, please contact us at <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "If you have any questions about these Terms, please contact us at <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline by <strong style=\"color:#6BBFED;\">Shallow TV</strong>. All rights reserved.",
     "footer.docs": "Docs",
     "footer.terms": "Terms",
@@ -676,7 +676,7 @@ window.I18N = {
     "privacy.changes.title": "Changes to This Policy",
     "privacy.changes.text": "We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated date. Continued use of the app after changes constitutes acceptance of the revised policy.",
     "privacy.contact.title": "Contact",
-    "privacy.contact.text": "If you have any questions about this privacy policy, please contact us at <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "If you have any questions about this privacy policy, please contact us at <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. All rights reserved."
   },
   "es": {
@@ -734,7 +734,7 @@ window.I18N = {
     "terms.s8.title": "Ley Aplicable",
     "terms.s8.text": "Estos Términos se regirán e interpretarán de conformidad con las leyes aplicables, sin tener en cuenta los principios de conflicto de leyes. Cualquier disputa derivada de estos Términos o del uso de la App estará sujeta a la jurisdicción exclusiva de los tribunales competentes.",
     "terms.s9.title": "Contacto",
-    "terms.s9.text": "Si tiene alguna pregunta sobre estos Términos, contáctenos en <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Si tiene alguna pregunta sobre estos Términos, contáctenos en <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline por <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Todos los derechos reservados.",
     "footer.docs": "Docs",
     "footer.terms": "Términos",
@@ -815,7 +815,7 @@ window.I18N = {
     "privacy.changes.title": "Cambios en esta política",
     "privacy.changes.text": "Podemos actualizar esta política de privacidad ocasionalmente. Cualquier cambio se reflejará en esta página con una fecha actualizada. El uso continuado de la aplicación tras los cambios constituye la aceptación de la política revisada.",
     "privacy.contact.title": "Contacto",
-    "privacy.contact.text": "Si tienes alguna pregunta sobre esta política de privacidad, contáctanos en <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Si tienes alguna pregunta sobre esta política de privacidad, contáctanos en <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Todos los derechos reservados."
   },
   "fa": {
@@ -873,7 +873,7 @@ window.I18N = {
     "terms.s8.title": "قانون حاکم",
     "terms.s8.text": "این شرایط بر اساس قوانین قابل اجرا، بدون در نظر گرفتن اصول تعارض قوانین، اداره و تفسیر می‌شوند. هرگونه اختلاف ناشی از این شرایط یا استفاده شما از برنامه، تابع صلاحیت انحصاری دادگاه‌های صالح خواهد بود.",
     "terms.s9.title": "تماس",
-    "terms.s9.text": "اگر سؤالی درباره این شرایط دارید، لطفاً با ما از طریق <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a> تماس بگیرید.",
+    "terms.s9.text": "اگر سؤالی درباره این شرایط دارید، لطفاً با ما از طریق <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a> تماس بگیرید.",
     "copyright.text": "© ۲۰۲۶ Streamline توسط <strong style=\"color:#6BBFED;\">Shallow TV</strong>. تمامی حقوق محفوظ است.",
     "footer.docs": "مستندات",
     "footer.terms": "شرایط",
@@ -954,7 +954,7 @@ window.I18N = {
     "privacy.changes.title": "تغییرات در این سیاست",
     "privacy.changes.text": "ممکن است این سیاست حفظ حریم خصوصی را هر از گاهی به‌روزرسانی کنیم. هرگونه تغییر به همراه تاریخ به‌روز شده در این صفحه منعکس خواهد شد. ادامه استفاده از برنامه پس از اعمال تغییرات به منزله پذیرش سیاست بازنگری‌شده است.",
     "privacy.contact.title": "تماس با ما",
-    "privacy.contact.text": "اگر درباره این سیاست حفظ حریم خصوصی سؤالی دارید، لطفاً از طریق <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a> با ما تماس بگیرید.",
+    "privacy.contact.text": "اگر درباره این سیاست حفظ حریم خصوصی سؤالی دارید، لطفاً از طریق <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a> با ما تماس بگیرید.",
     "privacy.copyright": "© ۲۰۲۶ Streamline. تمامی حقوق محفوظ است."
   },
   "fi": {
@@ -1045,7 +1045,7 @@ window.I18N = {
     "terms.s8.title": "Sovellettava laki",
     "terms.s8.text": "Näihin ehtoihin sovelletaan sovellettavia lakeja ja ne tulkitaan niiden mukaisesti ottamatta huomioon lainvalintaperiaatteita. Näistä ehdoista tai sovelluksen käytöstäsi johtuvat riidat kuuluvat toimivaltaisten tuomioistuinten yksinomaiseen toimivaltaan.",
     "terms.s9.title": "Yhteystiedot",
-    "terms.s9.text": "Jos sinulla on kysyttävää näistä ehdoista, ota meihin yhteyttä osoitteessa <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Jos sinulla on kysyttävää näistä ehdoista, ota meihin yhteyttä osoitteessa <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline by <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Kaikki oikeudet pidätetään.",
     "footer.docs": "Dokumentaatio",
     "footer.terms": "Käyttöehdot",
@@ -1088,7 +1088,7 @@ window.I18N = {
     "privacy.changes.title": "Muutokset tähän käytäntöön",
     "privacy.changes.text": "Saatamme päivittää tätä tietosuojakäytäntöä ajoittain. Muutokset näkyvät tällä sivulla päivitetyllä päivämäärällä. Sovelluksen käytön jatkaminen muutosten jälkeen tarkoittaa päivitetyn käytännön hyväksymistä.",
     "privacy.contact.title": "Yhteystiedot",
-    "privacy.contact.text": "Jos sinulla on kysyttävää tästä tietosuojakäytännöstä, ota yhteyttä osoitteeseen <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Jos sinulla on kysyttävää tästä tietosuojakäytännöstä, ota yhteyttä osoitteeseen <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Kaikki oikeudet pidätetään."
   },
   "fr-CA": {
@@ -1180,7 +1180,7 @@ window.I18N = {
     "terms.s8.title": "Droit applicable",
     "terms.s8.text": "Les présentes conditions sont régies et interprétées conformément aux lois applicables, sans égard aux principes de conflits de lois. Tout litige découlant des présentes conditions ou de votre utilisation de l'application relèvera de la compétence exclusive des tribunaux compétents.",
     "terms.s9.title": "Nous joindre",
-    "terms.s9.text": "Si vous avez des questions concernant les présentes conditions, veuillez nous joindre à <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Si vous avez des questions concernant les présentes conditions, veuillez nous joindre à <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline par <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Tous droits réservés.",
     "footer.docs": "Documentation",
     "footer.terms": "Conditions",
@@ -1221,7 +1221,7 @@ window.I18N = {
     "privacy.changes.title": "Modifications à cette politique",
     "privacy.changes.text": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Toute modification sera reflétée sur cette page avec une date mise à jour. L'utilisation continue de l'application après des modifications constitue l'acceptation de la politique révisée.",
     "privacy.contact.title": "Nous joindre",
-    "privacy.contact.text": "Si vous avez des questions au sujet de cette politique de confidentialité, veuillez nous joindre à <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Si vous avez des questions au sujet de cette politique de confidentialité, veuillez nous joindre à <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Tous droits réservés."
   },
   "fr": {
@@ -1279,7 +1279,7 @@ window.I18N = {
     "terms.s8.title": "Droit applicable",
     "terms.s8.text": "Les présentes Conditions sont régies et interprétées conformément aux lois applicables, sans égard aux principes de conflits de lois. Tout litige découlant des présentes Conditions ou de votre utilisation de l'application sera soumis à la juridiction exclusive des tribunaux compétents.",
     "terms.s9.title": "Contact",
-    "terms.s9.text": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter à <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter à <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline par <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Tous droits réservés.",
     "footer.docs": "Docs",
     "footer.terms": "Conditions",
@@ -1360,7 +1360,7 @@ window.I18N = {
     "privacy.changes.title": "Modifications de cette politique",
     "privacy.changes.text": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Toute modification sera reflétée sur cette page avec une date mise à jour. L'utilisation continue de l'application après modification vaut acceptation de la politique révisée.",
     "privacy.contact.title": "Contact",
-    "privacy.contact.text": "Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Tous droits réservés."
   },
   "he": {
@@ -1451,7 +1451,7 @@ window.I18N = {
     "terms.s8.title": "דין חל",
     "terms.s8.text": "תנאים אלו יוסדרו ויפורשו בהתאם לחוקים החלים, ללא התחשבות בעקרונות ניגוד חוקים. כל מחלוקת הנובעת מתנאים אלו או מהשימוש שלך באפליקציה תהיה נתונה לסמכות השיפוט הבלעדית של בתי המשפט המוסמכים.",
     "terms.s9.title": "צור קשר",
-    "terms.s9.text": "אם יש לך שאלות בנוגע לתנאים אלו, אנא צור איתנו קשר בכתובת <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "אם יש לך שאלות בנוגע לתנאים אלו, אנא צור איתנו קשר בכתובת <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline מאת <strong style=\"color:#6BBFED;\">Shallow TV</strong>. כל הזכויות שמורות.",
     "footer.docs": "מסמכים",
     "footer.terms": "תנאים",
@@ -1494,7 +1494,7 @@ window.I18N = {
     "privacy.changes.title": "שינויים במדיניות זו",
     "privacy.changes.text": "אנו עשויים לעדכן מדיניות פרטיות זו מעת לעת. כל שינוי יופיע בעמוד זה עם תאריך מעודכן. המשך השימוש באפליקציה לאחר השינויים מהווה הסכמה למדיניות המעודכנת.",
     "privacy.contact.title": "צור קשר",
-    "privacy.contact.text": "אם יש לך שאלות לגבי מדיניות פרטיות זו, אנא צור איתנו קשר בכתובת <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "אם יש לך שאלות לגבי מדיניות פרטיות זו, אנא צור איתנו קשר בכתובת <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. כל הזכויות שמורות."
   },
   "hi": {
@@ -1585,7 +1585,7 @@ window.I18N = {
     "terms.s8.title": "शासी कानून",
     "terms.s8.text": "ये नियम लागू कानूनों के अनुसार शासित और व्याख्यायित किए जाएंगे, कानूनों के टकराव के सिद्धांतों की परवाह किए बिना। इन नियमों या ऐप के आपके उपयोग से उत्पन्न कोई भी विवाद सक्षम न्यायालयों के अनन्य क्षेत्राधिकार के अधीन होगा।",
     "terms.s9.title": "संपर्क",
-    "terms.s9.text": "यदि आपके इन नियमों के बारे में कोई प्रश्न हैं, तो कृपया हमसे <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a> पर संपर्क करें।",
+    "terms.s9.text": "यदि आपके इन नियमों के बारे में कोई प्रश्न हैं, तो कृपया हमसे <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a> पर संपर्क करें।",
     "copyright.text": "© 2026 Streamline by <strong style=\"color:#6BBFED;\">Shallow TV</strong>. सर्वाधिकार सुरक्षित।",
     "footer.docs": "दस्तावेज़",
     "footer.terms": "नियम",
@@ -1628,7 +1628,7 @@ window.I18N = {
     "privacy.changes.title": "इस नीति में बदलाव",
     "privacy.changes.text": "हम समय-समय पर इस गोपनीयता नीति को अपडेट कर सकते हैं। कोई भी बदलाव इस पृष्ठ पर अद्यतन तिथि के साथ दर्शाया जाएगा। बदलावों के बाद ऐप का निरंतर उपयोग संशोधित नीति की स्वीकृति माना जाएगा।",
     "privacy.contact.title": "संपर्क",
-    "privacy.contact.text": "यदि इस गोपनीयता नीति के बारे में आपके कोई प्रश्न हैं, तो कृपया हमसे <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a> पर संपर्क करें।",
+    "privacy.contact.text": "यदि इस गोपनीयता नीति के बारे में आपके कोई प्रश्न हैं, तो कृपया हमसे <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a> पर संपर्क करें।",
     "privacy.copyright": "© 2026 Streamline. सर्वाधिकार सुरक्षित।"
   },
   "id": {
@@ -1686,7 +1686,7 @@ window.I18N = {
     "terms.s8.title": "Hukum yang Berlaku",
     "terms.s8.text": "Syarat-syarat ini diatur dan ditafsirkan sesuai dengan hukum yang berlaku, tanpa memperhatikan prinsip-prinsip konflik hukum. Setiap sengketa yang timbul dari Syarat-syarat ini atau penggunaan Anda atas Aplikasi akan tunduk pada yurisdiksi eksklusif pengadilan yang berwenang.",
     "terms.s9.title": "Kontak",
-    "terms.s9.text": "Jika Anda memiliki pertanyaan tentang Syarat-syarat ini, silakan hubungi kami di <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Jika Anda memiliki pertanyaan tentang Syarat-syarat ini, silakan hubungi kami di <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline oleh <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Hak cipta dilindungi.",
     "footer.docs": "Dokumentasi",
     "footer.terms": "Syarat",
@@ -1767,7 +1767,7 @@ window.I18N = {
     "privacy.changes.title": "Perubahan pada Kebijakan Ini",
     "privacy.changes.text": "Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Setiap perubahan akan tercermin pada halaman ini dengan tanggal yang diperbarui. Penggunaan aplikasi yang berkelanjutan setelah perubahan merupakan tanda penerimaan terhadap kebijakan yang direvisi.",
     "privacy.contact.title": "Kontak",
-    "privacy.contact.text": "Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi kami di <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi kami di <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Hak cipta dilindungi undang-undang."
   },
   "it": {
@@ -1825,7 +1825,7 @@ window.I18N = {
     "terms.s8.title": "Legge Applicabile",
     "terms.s8.text": "Questi Termini saranno disciplinati e interpretati in conformità con le leggi applicabili, senza riguardo ai principi di conflitto di leggi. Qualsiasi controversia derivante da questi Termini o dall'uso dell'App sarà soggetta alla giurisdizione esclusiva dei tribunali competenti.",
     "terms.s9.title": "Contatti",
-    "terms.s9.text": "Per qualsiasi domanda su questi Termini, contattaci all'indirizzo <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Per qualsiasi domanda su questi Termini, contattaci all'indirizzo <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline di <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Tutti i diritti riservati.",
     "footer.docs": "Documentazione",
     "footer.terms": "Termini",
@@ -1906,7 +1906,7 @@ window.I18N = {
     "privacy.changes.title": "Modifiche a questa informativa",
     "privacy.changes.text": "Potremmo aggiornare questa informativa sulla privacy di tanto in tanto. Eventuali modifiche saranno riflesse in questa pagina con una data aggiornata. L'uso continuato dell'app dopo le modifiche costituisce accettazione dell'informativa rivista.",
     "privacy.contact.title": "Contatti",
-    "privacy.contact.text": "Se hai domande su questa informativa sulla privacy, contattaci all'indirizzo <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Se hai domande su questa informativa sulla privacy, contattaci all'indirizzo <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Tutti i diritti riservati."
   },
   "ja": {
@@ -1964,7 +1964,7 @@ window.I18N = {
     "terms.s8.title": "準拠法",
     "terms.s8.text": "本規約は、抵触法の原則に関わらず、適用法令に従って解釈および執行されるものとします。本規約またはお客様によるアプリの使用から生じる紛争は、管轄裁判所の専属的管轄に服するものとします。",
     "terms.s9.title": "お問い合わせ",
-    "terms.s9.text": "本規約についてご質問がある場合は、<a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a> までご連絡ください。",
+    "terms.s9.text": "本規約についてご質問がある場合は、<a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a> までご連絡ください。",
     "copyright.text": "© 2026 Streamline by <strong style=\"color:#6BBFED;\">Shallow TV</strong>. All rights reserved.",
     "footer.docs": "ドキュメント",
     "footer.terms": "利用規約",
@@ -2045,7 +2045,7 @@ window.I18N = {
     "privacy.changes.title": "本ポリシーの変更",
     "privacy.changes.text": "当方は、本プライバシーポリシーを随時更新することがあります。変更があった場合は、本ページに更新日とともに反映されます。変更後も継続して本アプリをご利用いただいた場合、改訂後のポリシーに同意したものとみなされます。",
     "privacy.contact.title": "お問い合わせ",
-    "privacy.contact.text": "本プライバシーポリシーに関するご質問は、<a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>までお問い合わせください。",
+    "privacy.contact.text": "本プライバシーポリシーに関するご質問は、<a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>までお問い合わせください。",
     "privacy.copyright": "© 2026 Streamline. All rights reserved."
   },
   "ko": {
@@ -2103,7 +2103,7 @@ window.I18N = {
     "terms.s8.title": "준거법",
     "terms.s8.text": "본 약관은 저촉법 원칙에 관계없이 관련 법률에 따라 규율되고 해석됩니다. 본 약관 또는 앱 사용으로 인해 발생하는 모든 분쟁은 관할 법원의 전속 관할에 따릅니다.",
     "terms.s9.title": "문의",
-    "terms.s9.text": "본 약관에 관한 문의 사항이 있으시면 <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>으로 연락해 주세요.",
+    "terms.s9.text": "본 약관에 관한 문의 사항이 있으시면 <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>으로 연락해 주세요.",
     "copyright.text": "© 2026 Streamline by <strong style=\"color:#6BBFED;\">Shallow TV</strong>. All rights reserved.",
     "footer.docs": "문서",
     "footer.terms": "약관",
@@ -2184,7 +2184,7 @@ window.I18N = {
     "privacy.changes.title": "본 정책의 변경 사항",
     "privacy.changes.text": "당사는 본 개인정보 보호정책을 수시로 업데이트할 수 있습니다. 변경 사항은 업데이트된 날짜와 함께 이 페이지에 반영됩니다. 변경 후에도 앱을 계속 사용하는 것은 개정된 정책에 대한 동의로 간주됩니다.",
     "privacy.contact.title": "문의",
-    "privacy.contact.text": "본 개인정보 보호정책에 대한 질문이 있으시면 <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>으로 문의해 주세요.",
+    "privacy.contact.text": "본 개인정보 보호정책에 대한 질문이 있으시면 <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>으로 문의해 주세요.",
     "privacy.copyright": "© 2026 Streamline. 모든 권리 보유."
   },
   "ms": {
@@ -2276,7 +2276,7 @@ window.I18N = {
     "terms.s8.title": "Undang-undang yang Mentadbir",
     "terms.s8.text": "Terma-terma ini akan ditadbir oleh dan ditafsirkan mengikut undang-undang yang berkenaan, tanpa mengambil kira prinsip percanggahan undang-undang. Sebarang pertikaian yang timbul daripada Terma ini atau penggunaan Aplikasi anda akan tertakluk kepada bidang kuasa eksklusif mahkamah yang berwibawa.",
     "terms.s9.title": "Hubungi",
-    "terms.s9.text": "Jika anda mempunyai sebarang pertanyaan mengenai Terma ini, sila hubungi kami di <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Jika anda mempunyai sebarang pertanyaan mengenai Terma ini, sila hubungi kami di <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline oleh <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Hak cipta terpelihara.",
     "footer.docs": "Dokumen",
     "footer.terms": "Terma",
@@ -2317,7 +2317,7 @@ window.I18N = {
     "privacy.changes.title": "Perubahan kepada Dasar Ini",
     "privacy.changes.text": "Kami mungkin mengemas kini dasar privasi ini dari semasa ke semasa. Sebarang perubahan akan dipaparkan di halaman ini dengan tarikh yang dikemas kini. Penggunaan berterusan aplikasi selepas perubahan dibuat menandakan penerimaan terhadap dasar yang disemak.",
     "privacy.contact.title": "Hubungi",
-    "privacy.contact.text": "Jika anda mempunyai sebarang soalan mengenai dasar privasi ini, sila hubungi kami di <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Jika anda mempunyai sebarang soalan mengenai dasar privasi ini, sila hubungi kami di <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Hak cipta terpelihara."
   },
   "nl": {
@@ -2408,7 +2408,7 @@ window.I18N = {
     "terms.s8.title": "Toepasselijk recht",
     "terms.s8.text": "Op deze Voorwaarden is het toepasselijke recht van toepassing en zij worden dienovereenkomstig uitgelegd, zonder rekening te houden met conflictenrechtelijke beginselen. Geschillen die voortvloeien uit deze Voorwaarden of uit uw gebruik van de App zijn onderworpen aan de exclusieve jurisdictie van de bevoegde rechtbanken.",
     "terms.s9.title": "Contact",
-    "terms.s9.text": "Als u vragen hebt over deze Voorwaarden, neem dan contact met ons op via <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Als u vragen hebt over deze Voorwaarden, neem dan contact met ons op via <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline door <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Alle rechten voorbehouden.",
     "footer.docs": "Documentatie",
     "footer.terms": "Voorwaarden",
@@ -2451,7 +2451,7 @@ window.I18N = {
     "privacy.changes.title": "Wijzigingen in dit Beleid",
     "privacy.changes.text": "Wij kunnen dit privacybeleid van tijd tot tijd bijwerken. Eventuele wijzigingen worden op deze pagina weergegeven met een bijgewerkte datum. Voortgezet gebruik van de app na wijzigingen houdt acceptatie in van het herziene beleid.",
     "privacy.contact.title": "Contact",
-    "privacy.contact.text": "Als u vragen heeft over dit privacybeleid, neem dan contact met ons op via <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Als u vragen heeft over dit privacybeleid, neem dan contact met ons op via <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Alle rechten voorbehouden."
   },
   "pl": {
@@ -2509,7 +2509,7 @@ window.I18N = {
     "terms.s8.title": "Prawo właściwe",
     "terms.s8.text": "Niniejsze Warunki podlegają prawu właściwemu i są interpretowane zgodnie z obowiązującymi przepisami prawa, bez względu na zasady kolizji prawa. Wszelkie spory wynikające z niniejszych Warunków lub korzystania z Aplikacji podlegają wyłącznej jurysdykcji właściwych sądów.",
     "terms.s9.title": "Kontakt",
-    "terms.s9.text": "Jeśli masz jakiekolwiek pytania dotyczące niniejszych Warunków, skontaktuj się z nami pod adresem <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Jeśli masz jakiekolwiek pytania dotyczące niniejszych Warunków, skontaktuj się z nami pod adresem <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline by <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Wszelkie prawa zastrzeżone.",
     "footer.docs": "Dokumentacja",
     "footer.terms": "Warunki",
@@ -2590,7 +2590,7 @@ window.I18N = {
     "privacy.changes.title": "Zmiany w tej polityce",
     "privacy.changes.text": "Od czasu do czasu możemy aktualizować tę politykę prywatności. Wszelkie zmiany zostaną odzwierciedlone na tej stronie wraz ze zaktualizowaną datą. Dalsze korzystanie z aplikacji po wprowadzeniu zmian oznacza akceptację zaktualizowanej polityki.",
     "privacy.contact.title": "Kontakt",
-    "privacy.contact.text": "Jeśli masz jakiekolwiek pytania dotyczące tej polityki prywatności, skontaktuj się z nami pod adresem <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Jeśli masz jakiekolwiek pytania dotyczące tej polityki prywatności, skontaktuj się z nami pod adresem <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Wszelkie prawa zastrzeżone."
   },
   "pt-BR": {
@@ -2656,7 +2656,7 @@ window.I18N = {
     "terms.s8.title": "Lei Aplicável",
     "terms.s8.text": "Estes Termos serão regidos e interpretados de acordo com as leis aplicáveis, sem considerar conflitos de princípios legais. Quaisquer disputas decorrentes destes Termos ou do seu uso do App estarão sujeitas à jurisdição exclusiva dos tribunais competentes.",
     "terms.s9.title": "Contato",
-    "terms.s9.text": "Se você tiver dúvidas sobre estes Termos, entre em contato conosco pelo e-mail <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Se você tiver dúvidas sobre estes Termos, entre em contato conosco pelo e-mail <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline by <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Todos os direitos reservados.",
     "footer.docs": "Docs",
     "footer.terms": "Termos",
@@ -2724,7 +2724,7 @@ window.I18N = {
     "privacy.changes.title": "Alterações nesta Política",
     "privacy.changes.text": "Podemos atualizar esta política de privacidade periodicamente. Quaisquer alterações serão refletidas nesta página com uma data atualizada. O uso contínuo do aplicativo após as alterações constitui aceitação da política revisada.",
     "privacy.contact.title": "Contato",
-    "privacy.contact.text": "Se você tiver alguma dúvida sobre esta política de privacidade, entre em contato pelo e-mail <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Se você tiver alguma dúvida sobre esta política de privacidade, entre em contato pelo e-mail <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Todos os direitos reservados."
   },
   "ru": {
@@ -2782,7 +2782,7 @@ window.I18N = {
     "terms.s8.title": "Применимое право",
     "terms.s8.text": "Настоящие Условия регулируются и толкуются в соответствии с применимым законодательством, без учёта коллизионных норм. Любые споры, возникающие из настоящих Условий или использования вами Приложения, подлежат исключительной юрисдикции компетентных судов.",
     "terms.s9.title": "Контакты",
-    "terms.s9.text": "Если у вас есть вопросы по настоящим Условиям, свяжитесь с нами по адресу <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Если у вас есть вопросы по настоящим Условиям, свяжитесь с нами по адресу <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline от <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Все права защищены.",
     "footer.docs": "Документация",
     "footer.terms": "Условия",
@@ -2863,7 +2863,7 @@ window.I18N = {
     "privacy.changes.title": "Изменения в этой политике",
     "privacy.changes.text": "Мы можем периодически обновлять эту политику конфиденциальности. Любые изменения будут отражены на этой странице с обновлённой датой. Продолжение использования приложения после внесения изменений означает принятие пересмотренной политики.",
     "privacy.contact.title": "Контакты",
-    "privacy.contact.text": "Если у вас есть вопросы об этой политике конфиденциальности, свяжитесь с нами по адресу <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Если у вас есть вопросы об этой политике конфиденциальности, свяжитесь с нами по адресу <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Все права защищены."
   },
   "sk": {
@@ -2955,7 +2955,7 @@ window.I18N = {
     "terms.s8.title": "Rozhodné právo",
     "terms.s8.text": "Tieto Podmienky sa riadia a vykladajú v súlade s platnými zákonmi, bez ohľadu na zásady kolíznych noriem. Akékoľvek spory vyplývajúce z týchto Podmienok alebo z vášho používania aplikácie podliehajú výhradnej jurisdikcii príslušných súdov.",
     "terms.s9.title": "Kontakt",
-    "terms.s9.text": "Ak máte akékoľvek otázky týkajúce sa týchto Podmienok, kontaktujte nás na adrese <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Ak máte akékoľvek otázky týkajúce sa týchto Podmienok, kontaktujte nás na adrese <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline od <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Všetky práva vyhradené.",
     "footer.docs": "Dokumentácia",
     "footer.terms": "Podmienky",
@@ -2996,7 +2996,7 @@ window.I18N = {
     "privacy.changes.title": "Zmeny týchto zásad",
     "privacy.changes.text": "Tieto zásady ochrany osobných údajov môžeme z času na čas aktualizovať. Akékoľvek zmeny sa prejavia na tejto stránke s aktualizovaným dátumom. Pokračovaním v používaní aplikácie po vykonaní zmien vyjadrujete súhlas s upravenými zásadami.",
     "privacy.contact.title": "Kontakt",
-    "privacy.contact.text": "Ak máte akékoľvek otázky týkajúce sa týchto zásad ochrany osobných údajov, kontaktujte nás na adrese <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Ak máte akékoľvek otázky týkajúce sa týchto zásad ochrany osobných údajov, kontaktujte nás na adrese <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Všetky práva vyhradené."
   },
   "sv": {
@@ -3088,7 +3088,7 @@ window.I18N = {
     "terms.s8.title": "Tillämplig lag",
     "terms.s8.text": "Dessa villkor ska regleras av och tolkas i enlighet med tillämpliga lagar, utan hänsyn till lagvalsprinciper. Eventuella tvister som uppstår ur dessa villkor eller din användning av appen ska omfattas av de behöriga domstolarnas exklusiva jurisdiktion.",
     "terms.s9.title": "Kontakt",
-    "terms.s9.text": "Om du har några frågor om dessa villkor, vänligen kontakta oss på <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Om du har några frågor om dessa villkor, vänligen kontakta oss på <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline av <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Alla rättigheter förbehållna.",
     "footer.docs": "Dokumentation",
     "footer.terms": "Villkor",
@@ -3129,7 +3129,7 @@ window.I18N = {
     "privacy.changes.title": "Ändringar i denna policy",
     "privacy.changes.text": "Vi kan komma att uppdatera denna integritetspolicy då och då. Eventuella ändringar kommer att återspeglas på denna sida med ett uppdaterat datum. Fortsatt användning av appen efter ändringar innebär att du godkänner den reviderade policyn.",
     "privacy.contact.title": "Kontakt",
-    "privacy.contact.text": "Om du har några frågor om denna integritetspolicy, vänligen kontakta oss på <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Om du har några frågor om denna integritetspolicy, vänligen kontakta oss på <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Med ensamrätt."
   },
   "th": {
@@ -3187,7 +3187,7 @@ window.I18N = {
     "terms.s8.title": "กฎหมายที่ใช้บังคับ",
     "terms.s8.text": "ข้อกำหนดเหล่านี้จะถูกควบคุมและตีความตามกฎหมายที่บังคับใช้ โดยไม่คำนึงถึงหลักการขัดกันแห่งกฎหมาย ข้อพิพาทใด ๆ ที่เกิดจากข้อกำหนดเหล่านี้หรือการใช้แอปของคุณจะอยู่ภายใต้เขตอำนาจศาลเฉพาะของศาลที่มีอำนาจพิจารณา",
     "terms.s9.title": "ติดต่อเรา",
-    "terms.s9.text": "หากคุณมีคำถามเกี่ยวกับข้อกำหนดเหล่านี้ โปรดติดต่อเราที่ <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>",
+    "terms.s9.text": "หากคุณมีคำถามเกี่ยวกับข้อกำหนดเหล่านี้ โปรดติดต่อเราที่ <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>",
     "copyright.text": "© 2026 Streamline โดย <strong style=\"color:#6BBFED;\">Shallow TV</strong> สงวนลิขสิทธิ์ทั้งหมด",
     "footer.docs": "เอกสาร",
     "footer.terms": "ข้อกำหนด",
@@ -3268,7 +3268,7 @@ window.I18N = {
     "privacy.changes.title": "การเปลี่ยนแปลงนโยบายนี้",
     "privacy.changes.text": "เราอาจปรับปรุงนโยบายความเป็นส่วนตัวนี้เป็นครั้งคราว การเปลี่ยนแปลงใด ๆ จะแสดงบนหน้านี้พร้อมวันที่ที่อัปเดต การใช้แอปต่อไปหลังจากมีการเปลี่ยนแปลงถือเป็นการยอมรับนโยบายที่แก้ไขแล้ว",
     "privacy.contact.title": "ติดต่อ",
-    "privacy.contact.text": "หากคุณมีคำถามใด ๆ เกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อเราที่ <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>",
+    "privacy.contact.text": "หากคุณมีคำถามใด ๆ เกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อเราที่ <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>",
     "privacy.copyright": "© 2026 Streamline สงวนลิขสิทธิ์"
   },
   "tr": {
@@ -3334,7 +3334,7 @@ window.I18N = {
     "terms.s8.title": "Geçerli Hukuk",
     "terms.s8.text": "Bu Koşullar, kanunlar ihtilafı ilkeleri gözetilmeksizin yürürlükteki yasalar çerçevesinde yönetilecek ve yorumlanacaktır. Bu Koşullardan veya Uygulamayı kullanımınızdan doğan her türlü anlaşmazlık, yetkili mahkemelerin münhasır yargı yetkisine tabi olacaktır.",
     "terms.s9.title": "İletişim",
-    "terms.s9.text": "Bu Koşullar hakkında sorularınız varsa lütfen <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a> adresinden bizimle iletişime geçin.",
+    "terms.s9.text": "Bu Koşullar hakkında sorularınız varsa lütfen <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a> adresinden bizimle iletişime geçin.",
     "copyright.text": "© 2026 Streamline, <strong style=\"color:#6BBFED;\">Shallow TV</strong> tarafından. Tüm hakları saklıdır.",
     "footer.docs": "Dökümanlar",
     "footer.terms": "Koşullar",
@@ -3402,7 +3402,7 @@ window.I18N = {
     "privacy.changes.title": "Bu Politikadaki Değişiklikler",
     "privacy.changes.text": "Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Tüm değişiklikler güncellenmiş bir tarihle bu sayfaya yansıtılacaktır. Değişikliklerden sonra uygulamayı kullanmaya devam etmeniz, revize edilmiş politikayı kabul ettiğiniz anlamına gelir.",
     "privacy.contact.title": "İletişim",
-    "privacy.contact.text": "Bu gizlilik politikası hakkında sorularınız varsa lütfen <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a> adresinden bizimle iletişime geçin.",
+    "privacy.contact.text": "Bu gizlilik politikası hakkında sorularınız varsa lütfen <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a> adresinden bizimle iletişime geçin.",
     "privacy.copyright": "© 2026 Streamline. Tüm hakları saklıdır."
   },
   "uk": {
@@ -3493,7 +3493,7 @@ window.I18N = {
     "terms.s8.title": "Застосовне право",
     "terms.s8.text": "Ці Умови регулюються та тлумачаться відповідно до чинного законодавства без урахування колізійних норм. Будь-які спори, що виникають із цих Умов або вашого використання застосунку, підлягають виключній юрисдикції компетентних судів.",
     "terms.s9.title": "Контакти",
-    "terms.s9.text": "Якщо у вас є запитання щодо цих Умов, будь ласка, зв'яжіться з нами за адресою <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Якщо у вас є запитання щодо цих Умов, будь ласка, зв'яжіться з нами за адресою <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline від <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Усі права захищені.",
     "footer.docs": "Документи",
     "footer.terms": "Умови",
@@ -3536,7 +3536,7 @@ window.I18N = {
     "privacy.changes.title": "Зміни цієї політики",
     "privacy.changes.text": "Ми можемо час від часу оновлювати цю політику конфіденційності. Будь-які зміни будуть відображені на цій сторінці з оновленою датою. Продовження використання застосунку після внесення змін означає прийняття оновленої політики.",
     "privacy.contact.title": "Контакти",
-    "privacy.contact.text": "Якщо у вас є запитання щодо цієї політики конфіденційності, зв'яжіться з нами за адресою <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Якщо у вас є запитання щодо цієї політики конфіденційності, зв'яжіться з нами за адресою <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Усі права захищені."
   },
   "vi": {
@@ -3602,7 +3602,7 @@ window.I18N = {
     "terms.s8.title": "Luật Điều Chỉnh",
     "terms.s8.text": "Các Điều khoản này sẽ được điều chỉnh và giải thích theo luật hiện hành, không xét đến các nguyên tắc xung đột pháp luật. Mọi tranh chấp phát sinh từ các Điều khoản này hoặc việc bạn sử dụng Ứng dụng sẽ thuộc thẩm quyền xét xử độc quyền của các tòa án có thẩm quyền.",
     "terms.s9.title": "Liên Hệ",
-    "terms.s9.text": "Nếu bạn có bất kỳ câu hỏi nào về các Điều khoản này, vui lòng liên hệ với chúng tôi tại <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a>.",
+    "terms.s9.text": "Nếu bạn có bất kỳ câu hỏi nào về các Điều khoản này, vui lòng liên hệ với chúng tôi tại <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a>.",
     "copyright.text": "© 2026 Streamline bởi <strong style=\"color:#6BBFED;\">Shallow TV</strong>. Bảo lưu mọi quyền.",
     "footer.docs": "Tài Liệu",
     "footer.terms": "Điều Khoản",
@@ -3670,7 +3670,7 @@ window.I18N = {
     "privacy.changes.title": "Thay đổi đối với Chính sách này",
     "privacy.changes.text": "Chúng tôi có thể cập nhật chính sách quyền riêng tư này theo thời gian. Mọi thay đổi sẽ được phản ánh trên trang này kèm theo ngày cập nhật. Việc tiếp tục sử dụng ứng dụng sau khi có thay đổi đồng nghĩa với việc chấp nhận chính sách đã sửa đổi.",
     "privacy.contact.title": "Liên hệ",
-    "privacy.contact.text": "Nếu bạn có bất kỳ câu hỏi nào về chính sách quyền riêng tư này, vui lòng liên hệ với chúng tôi tại <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a>.",
+    "privacy.contact.text": "Nếu bạn có bất kỳ câu hỏi nào về chính sách quyền riêng tư này, vui lòng liên hệ với chúng tôi tại <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a>.",
     "privacy.copyright": "© 2026 Streamline. Bảo lưu mọi quyền."
   },
   "zh-HK": {
@@ -3736,7 +3736,7 @@ window.I18N = {
     "terms.s8.title": "適用法律",
     "terms.s8.text": "本條款受適用法律管轄並依其解釋，不考慮法律衝突原則。因本條款或您使用本應用程式而產生的任何糾紛，均受相關主管法院的專屬管轄。",
     "terms.s9.title": "聯絡我們",
-    "terms.s9.text": "如您對本條款有任何疑問，請透過 <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a> 與我們聯絡。",
+    "terms.s9.text": "如您對本條款有任何疑問，請透過 <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a> 與我們聯絡。",
     "copyright.text": "© 2026 Streamline by <strong style=\"color:#6BBFED;\">Shallow TV</strong>。版權所有。",
     "footer.docs": "文件",
     "footer.terms": "條款",
@@ -3804,7 +3804,7 @@ window.I18N = {
     "privacy.changes.title": "本政策嘅變更",
     "privacy.changes.text": "我哋或會不時更新本私隱政策。任何變更將會反映喺本頁面並附上更新日期。喺變更後繼續使用本應用程式即代表接受經修訂嘅政策。",
     "privacy.contact.title": "聯絡我哋",
-    "privacy.contact.text": "如你對本私隱政策有任何疑問，請透過 <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a> 聯絡我哋。",
+    "privacy.contact.text": "如你對本私隱政策有任何疑問，請透過 <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a> 聯絡我哋。",
     "privacy.copyright": "© 2026 Streamline。版權所有。"
   },
   "zh-Hans": {
@@ -3862,7 +3862,7 @@ window.I18N = {
     "terms.s8.title": "适用法律",
     "terms.s8.text": "本条款受适用法律管辖并依其解释，不考虑法律冲突原则。因本条款或您使用本应用而产生的任何争议，应提交有管辖权的法院进行专属管辖。",
     "terms.s9.title": "联系我们",
-    "terms.s9.text": "如您对本条款有任何疑问，请通过 <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a> 与我们联系。",
+    "terms.s9.text": "如您对本条款有任何疑问，请通过 <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a> 与我们联系。",
     "copyright.text": "© 2026 Streamline by <strong style=\"color:#6BBFED;\">Shallow TV</strong>。保留所有权利。",
     "footer.docs": "文档",
     "footer.terms": "条款",
@@ -3943,7 +3943,7 @@ window.I18N = {
     "privacy.changes.title": "本政策的变更",
     "privacy.changes.text": "我们可能会不时更新本隐私政策。所有变更都将在本页面更新日期中体现。在变更后继续使用本应用即表示您接受修订后的政策。",
     "privacy.contact.title": "联系我们",
-    "privacy.contact.text": "如对本隐私政策有任何疑问，请通过 <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a> 与我们联系。",
+    "privacy.contact.text": "如对本隐私政策有任何疑问，请通过 <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a> 与我们联系。",
     "privacy.copyright": "© 2026 Streamline. 保留所有权利。"
   },
   "zh-Hant": {
@@ -4034,7 +4034,7 @@ window.I18N = {
     "terms.s8.title": "適用法律",
     "terms.s8.text": "本條款應依適用法律解釋並受其規範，不受法律衝突原則影響。因本條款或您使用本應用程式所產生的任何爭議，應由具管轄權之法院專屬管轄。",
     "terms.s9.title": "聯絡我們",
-    "terms.s9.text": "如您對本條款有任何疑問，請透過 <a href=\"mailto:contact@shallowtv.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowtv.com</a> 與我們聯絡。",
+    "terms.s9.text": "如您對本條款有任何疑問，請透過 <a href=\"mailto:contact@shallowapps.com\" style=\"color:rgba(107,191,237,0.9);text-decoration:none;\">contact@shallowapps.com</a> 與我們聯絡。",
     "copyright.text": "© 2026 Streamline，由 <strong style=\"color:#6BBFED;\">Shallow TV</strong> 開發。保留所有權利。",
     "footer.docs": "文件",
     "footer.terms": "條款",
@@ -4077,7 +4077,7 @@ window.I18N = {
     "privacy.changes.title": "本政策之變更",
     "privacy.changes.text": "我們可能會不時更新本隱私權政策。任何變更將反映於本頁並更新日期。於變更後繼續使用本應用程式即視為接受修訂後的政策。",
     "privacy.contact.title": "聯絡我們",
-    "privacy.contact.text": "如您對本隱私權政策有任何疑問，請透過 <a href=\"mailto:contact@shallowtv.com\">contact@shallowtv.com</a> 與我們聯絡。",
+    "privacy.contact.text": "如您對本隱私權政策有任何疑問，請透過 <a href=\"mailto:contact@shallowapps.com\">contact@shallowapps.com</a> 與我們聯絡。",
     "privacy.copyright": "© 2026 Streamline. 保留所有權利。"
   }
 };
